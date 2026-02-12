@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #172023;
+    --background: #ffffff;
   }
 }
 
@@ -24,3 +24,12 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.font-bricolage {
+  font-family: var(--font-bricolage), sans-serif;
+}
+
+.font-mona {
+  font-family: var(--font-mona), sans-serif;
+}
+
