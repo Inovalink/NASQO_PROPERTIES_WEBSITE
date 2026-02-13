@@ -9,13 +9,13 @@ interface metricsProps {
 
 const Metrics: React.FC<metricsProps> = ({ title, subtext}) => {
     return (
-        <div className='relative metrics_Card border border-neutral-200 py-[8%] px-[8%] rounded-2xl w-full flex flex-col '>
-            <div className="absolute top-0 right-0 m-[5%] icon rounded-full border border-neutral-200  w-[15%] h-[30%] p-[2%] flex items-center">
-                <ArrowUpRight className='w-5 h-auto text-[#4361EE]' />
+        <div className='relative metrics_Card border border-neutral-200 py-[8%] 2xl:py-[8%] px-[8%] rounded-2xl 2xl:rounded-3xl w-full flex flex-col '>
+            <div className="absolute top-0 right-0 m-[5%] icon rounded-full border border-neutral-200  w-[15%] xl:w-[11%] 2xl:h-[25%] xl:flex xl:items-center xl:justify-center h-[30%] xl:h-[35%] p-[2%] flex items-center">
+                <ArrowUpRight className='w-5 h-auto text-black' />
             </div>
             <div className="text-value leading-2">
-                <p className='font-bricolage tracking-tigher font-semibold text-4xl'>{title}</p>
-                <p className='font-mona tracking-tight text-neutral-500 text-xs'>{subtext}</p>
+                <p className='font-bricolage tracking-tigher font-semibold text-4xl md:text-3xl xl:text-4xl 2xl:text-6xl'>{title}</p>
+                <p className='font-mona tracking-tight text-neutral-500 text-xs xl:text-md 2xl:text-lg'>{subtext}</p>
             </div>
         </div>
     )
