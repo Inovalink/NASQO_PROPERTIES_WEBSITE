@@ -16,7 +16,7 @@ function HeroComponent() {
             <p>Haven</p>
           </div>
         </div>
-        <div className="hero-buttons ml-[5%] 2xl:ml-[10%]  md:mx-[5%] mt-[10%] xl:mt-[1%] 2xl:mt-[1%] flex lg:flex-row flex-col gap-4 text-center">
+        <div className="hero-buttons ml-[5%] 2xl:ml-[10%]  md:mx-[5%] mt-[10%] xl:mt-[1%] xl:w-[30%] 2xl:w-[30%] 2xl:mt-[1%] flex lg:flex-row flex-col gap-4 text-center">
           <Button text="Get in touch" variants="secondary" href="/properties"  />
           <Button text="View details" variants="outline" href="/properties"  />
         </div>

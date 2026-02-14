@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque, Mona_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/footer";
+import { LenisProvider } from "./components/providers/LenisProvider";
+import CallToActionWrapper from "./components/CallToActionWrapper";
 
 const bricolage = Bricolage_Grotesque({
   subsets:["latin"],
@@ -31,8 +34,12 @@ export default function RootLayout({
       <body
         className={`${bricolage.variable} ${monaSans.variable} antialiased`}
       >
-        <Navbar />
-        {children}
+        <LenisProvider>
+          <Navbar />
+          {children}
+          <CallToActionWrapper />
+          <Footer />
+        </LenisProvider>
       </body>
     </html>
   );

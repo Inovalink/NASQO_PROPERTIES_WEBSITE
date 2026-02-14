@@ -1,0 +1,69 @@
+"use client";
+
+import React, { useRef, useEffect, useState } from "react";
+import Image from "next/image";
+import { useLenis } from "./providers/LenisProvider";
+
+const PARALLAX_SPEED = 0.15;
+
+const ServicesBanner: React.FC = () => {
+  const bannerRef = useRef<HTMLDivElement>(null);
+  const [offsetY, setOffsetY] = useState(0);
+  const lenis = useLenis();
+
+  useEffect(() => {
+    if (!lenis) return;
+
+    const handleScroll = () => {
+      const banner = bannerRef.current;
+      if (!banner) return;
+
+      const rect = banner.getBoundingClientRect();
+      const bannerCenter = rect.top + rect.height / 2;
+      const viewportCenter = window.innerHeight / 2;
+      const distance = viewportCenter - bannerCenter;
+      setOffsetY(distance * PARALLAX_SPEED);
+    };
+
+    lenis.on("scroll", handleScroll);
+    handleScroll();
+
+    return () => {
+      lenis.off("scroll", handleScroll);
+    };
+  }, [lenis]);
+
+  return (
+    <div
+      ref={bannerRef}
+      className="services_banner relative overflow-hidden w-full h-[40vh] xl:h-[70vh] mt-[15%] rounded-3xl"
+    >
+      <div
+        className="absolute top-[-10%] left-0 right-0 bottom-[-10%]"
+        style={{ transform: `translateY(${offsetY}px)` }}
+      >
+        <Image
+          src="/HomeAssets/Img17.jpg"
+          alt="services banner"
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      <div className="overlay_section absolute inset-0 bg-black/50 z-0" />
+
+      <div className="services_banner_text absolute bottom-10 md:bottom-25 lg:bottom-20 xl:bottom-40 2xl:bottom-40 px-[5%] md:px-[17%] lg:px-[18%] xl:px-[6%] 2xl:px-[6%] text-white z-10 w-full flex flex-col justify-center gap-4 xl:gap-10 2xl:gap-10">
+        <p className="font-bricolage font-semibold text-xl md:text-2xl lg:text-4xl md:w-[95%] lg:w-full xl:w-[60%] 2xl:w-[50%] w-[95%] tracking-tigher">
+          Your Key to Stress-Free Property
+        </p>
+        <p className="font-bricolage font-mona text-base md:text-lg lg:text-2xl leading-5 md:leading-6 lg:leading-7 tracking-tigher w-[95%] md:w-[95%] lg:w-full xl:w-[60%] 2xl:w-[50%]">
+          From trusted listings to seamless transactions, we make owning
+          property simple and secure. Discover spaces designed for comfort,
+          value, and long-term peace of mind. Unlock your future today.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default ServicesBanner;

@@ -11,22 +11,22 @@ interface SectionTagsProps {
 
 const SectionTags: React.FC<SectionTagsProps> = ({ name, imageSrc, className, header, subtext }) => {
   return (
-    <div className="main_container flex  flex-col gap-[3%] my-[10%] md:w-[80%] xl:w-[94%] 2xl:w-[80%]">
-      <div className="tag-text-container flex items-center gap-3">
+    <div className="main_container flex  flex-col itemx-center gap-[3%] 2xl:gap-1 my-[10%] md:w-[85%] xl:w-[94%] 2xl:w-[85%]">
+      <div className="tag-text-container flex items-center gap-3 xl:w-[200]">
         <Image
         src={imageSrc}
         alt={name}
         width={20}
         height={20}
-        className='w-[3%] h-auto'
+        className='w-[11] md:w-[13] lg:w-[14] xl:w-[12] 2xl:w-[12] h-auto'
         />
         <p className='font-bricolage capitalize font-semibold'>{name}</p>
 
       </div>
-      <div className="header font-bricolage text-2xl lg:text-3xl xl:text-5xl font-semibold tracking-tighter leading-7 xl:leading-10 py-[3%]">
+      <div className=" header font-bricolage md:text-3xl text-2xl lg:text-4xl xl:text-5xl font-semibold tracking-tighter leading-7 lg:leading-8 xl:leading-10 py-[3%]">
         {header}
       </div>
-      <div className="subtext lg:text-lg xl:text-xl font-mona text-neutral-500 leading-5">
+      <div className="subtext md:w-full xl:w-[90%] md:text-xl lg:text-2xl xl:text-xl font-mona text-neutral-500 leading-5 md:leading-6">
         {subtext}
       </div>
     </div>

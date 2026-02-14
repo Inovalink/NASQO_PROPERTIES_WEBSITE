@@ -9,7 +9,7 @@ interface metricsProps {
 
 const Metrics: React.FC<metricsProps> = ({ title, subtext}) => {
     return (
-        <div className='relative metrics_Card border border-neutral-200 py-[8%] 2xl:py-[8%] px-[8%] rounded-2xl 2xl:rounded-3xl w-full flex flex-col '>
+        <div className='relative metrics_Card border border-neutral-200 py-[8%] md:py-[10%] xl:py-[10%] 2xl:py-[8%] px-[8%] rounded-2xl 2xl:rounded-3xl w-full flex flex-col '>
             <div className="absolute top-0 right-0 m-[5%] icon rounded-full border border-neutral-200  w-[15%] xl:w-[11%] 2xl:h-[25%] xl:flex xl:items-center xl:justify-center h-[30%] xl:h-[35%] p-[2%] flex items-center">
                 <ArrowUpRight className='w-5 h-auto text-black' />
             </div>
