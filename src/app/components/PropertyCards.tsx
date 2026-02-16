@@ -16,7 +16,7 @@ interface PropertyCardsProps {
 }
 
 const sizeStyles: Record<CardSize, string> = {
-    small: "h-[40vh] md:h-[35vh] xl:h-[40vh]",
+    small: "h-[40vh] md:h-[35vh] xl:h-[40vh] 2xl:h-[50vh]",
     large: "h-[20vh]",
 };
 

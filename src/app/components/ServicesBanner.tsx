@@ -36,7 +36,7 @@ const ServicesBanner: React.FC = () => {
   return (
     <div
       ref={bannerRef}
-      className="services_banner relative overflow-hidden w-full h-[40vh] xl:h-[70vh] mt-[15%] rounded-3xl"
+      className="services_banner relative overflow-hidden w-full h-[40vh] xl:h-[70vh] mt-[15%] 2xl:mt-[5%] rounded-3xl"
     >
       <div
         className="absolute top-[-10%] left-0 right-0 bottom-[-10%]"
@@ -56,7 +56,7 @@ const ServicesBanner: React.FC = () => {
         <p className="font-bricolage font-semibold text-xl md:text-2xl lg:text-4xl md:w-[95%] lg:w-full xl:w-[60%] 2xl:w-[50%] w-[95%] tracking-tigher">
           Your Key to Stress-Free Property
         </p>
-        <p className="font-bricolage font-mona text-base md:text-lg lg:text-2xl leading-5 md:leading-6 lg:leading-7 tracking-tigher w-[95%] md:w-[95%] lg:w-full xl:w-[60%] 2xl:w-[50%]">
+        <p className="font-bricolage font-mona text-base md:text-lg lg:text-2xl 2xl:text-lg  leading-5 md:leading-6 lg:leading-7 tracking-tigher w-[95%] md:w-[95%] lg:w-full xl:w-[60%] 2xl:w-[44%]">
           From trusted listings to seamless transactions, we make owning
           property simple and secure. Discover spaces designed for comfort,
           value, and long-term peace of mind. Unlock your future today.

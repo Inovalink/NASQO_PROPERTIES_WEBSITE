@@ -70,7 +70,7 @@ function HomePage() {
       {/* About Section */}
 
       <div className="about_section_container">
-        <div className="about_section_main_content mx-[5%] mt-[10%] flex flex-col md:flex-row md:gap-[6%] 2xl:mx-[10%] lg:gap-[2%] xl:items-center xl:gap-0">
+        <div className="about_section_main_content mx-[5%] mt-[10%] 2xl:mt-[4%] flex flex-col md:flex-row md:gap-[6%] 2xl:mx-[10%] lg:gap-[2%] xl:items-center xl:gap-0">
           {/* Left section */}
           <div className="left_section md:flex md:flex-col md:justify-between 2xl:w-1/2 lg:w-full">
             <SectionTags
@@ -169,7 +169,7 @@ function HomePage() {
                   subtext="We offer a wide range of properties to choose from, including residential, commercial, and industrial properties."
                 />
               </div>
-              <div className="button_container xl:w-[70%] 2xl:w-[90%]">
+              <div className="button_container xl:w-[70%] 2xl:w-[90%] 2xl:mt-[-3%]">
                 <Button
                   text="Learn more"
                   variants="primary"
@@ -216,7 +216,7 @@ function HomePage() {
       </div>
 
       {/* Properties Tag_section */}
-      <div className="tag_section_container mx-[5%] 2xl:mx-[10%] mt-[30%] xl:mt-[20%] mb-[11%] xl:w-[50%] 2xl:w-[40%] xl:mb-0">
+      <div className="tag_section_container mx-[5%] 2xl:mx-[10%] mt-[30%] xl:mt-[20%] mb-[11%] xl:w-[50%] 2xl:w-[40%] xl:mb-0 2xl:mt-[6%]">
         <div className="tag content">
           <SectionTags
             name="categories"
@@ -226,7 +226,7 @@ function HomePage() {
           />
         </div>
 
-        <div className="button_container xl:w-[60%] 2xl:w-[70%] xl:mt-[-2%]">
+        <div className="button_container xl:w-[60%] 2xl:w-[55%] xl:mt-[-2%] 2xl:mt-[-6%]">
           <Button text="Learn more" variants="primary" href="/categories" />
         </div>
       </div>
@@ -234,7 +234,7 @@ function HomePage() {
       {/* Properties Section */}
       <div className="properties-container">
         <div
-          className="main_content mx-[5%] 2xl:mx-[10%] xl:w-full xl:py-[8%]  flex flex-col xl:flex-row xl:items-center
+          className="main_content mx-[5%] 2xl:mx-[10%] xl:w-full  flex flex-col xl:flex-row xl:items-center
          gap-20 md:gap-0 xl:gap-20"
         >
           <div className="left_section xl:w-[180%] 2xl:w-full h-[50] xl:h-[95vh] 2xl:mt-[-1%]">
@@ -346,7 +346,7 @@ function HomePage() {
                 subtext="We offer a wide range of properties to choose from, including residential, commercial, and industrial properties."
               />
             </div>
-            <div className="button_container xl:w-[60%] 2xl:w-[70%] xl:mt-[-2%]">
+            <div className="button_container xl:w-[60%] 2xl:w-[70%] xl:mt-[-2%] 2xl:mt-[-5%]">
               <Button text="Learn more" variants="primary" href="/categories" />
             </div>
           </div>
