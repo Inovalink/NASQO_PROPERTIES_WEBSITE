@@ -26,7 +26,7 @@ const SectionTags: React.FC<SectionTagsProps> = ({ name, imageSrc, className, he
       <div className=" header font-bricolage md:text-3xl text-2xl lg:text-4xl xl:text-5xl font-semibold tracking-tighter leading-7 lg:leading-8 xl:leading-10 py-[3%]">
         {header}
       </div>
-      <div className="subtext md:w-full xl:w-[90%] 2xl:w-full md:text-xl lg:text-2xl xl:text-xl 2xl:text-lg font-mona text-neutral-500 leading-5 md:leading-6">
+      <div className="subtext md:w-full xl:w-[90%] 2xl:w-full md:text-lg lg:text-lg xl:text-xl 2xl:text-lg font-mona text-neutral-500 leading-5 md:leading-6">
         {subtext}
       </div>
     </div>

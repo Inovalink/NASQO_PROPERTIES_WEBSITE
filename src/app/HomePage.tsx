@@ -91,10 +91,10 @@ function HomePage() {
                       <Icon className="w-8 h-auto text-[#4361EE]" />
                     </div>
                     <div className="card_title">
-                      <p className="font-bricolage tracking-tighter font-semibold text-lg lg:text-2xl xl:text-xl text-[#4361EE] ">
+                      <p className="font-bricolage tracking-tighter font-semibold text-lg lg:text-xl xl:text-xl text-[#4361EE] ">
                         {coreValue.title}
                       </p>
-                      <p className="font-mona tracking-tight text-neutral-500 lg:text-lg xl:text-sm">
+                      <p className="font-mona tracking-tight text-neutral-500 lg:text-base xl:text-sm 2xl:text-lg">
                         {coreValue.subtext}
                       </p>
                     </div>
@@ -111,7 +111,7 @@ function HomePage() {
 "
           >
             <div className="section_container border border-neutral-200 py-[3%] px-[3%] rounded-4xl xl:w-[85%] mt-[10%] md:mt-[10%] xl:mt-0 mb-[5%] xl:mb-[5%] 2xl:mb-[4%]">
-              <div className="banner_container relative overflow-hidden rounded-3xl w-full xl:w-full h-[30vh] md:h-[20vh] xl:h-[35vh] 2xl:h-[30vh]">
+              <div className="banner_container relative overflow-hidden rounded-3xl w-full xl:w-full h-[30vh] md:h-[20vh] xl:h-[35vh] 2xl:h-[38vh]">
                 <Image
                   src="/HomeAssets/Img15.jpg"
                   alt="banner"
@@ -121,7 +121,7 @@ function HomePage() {
                 />
               </div>
               <div className="vision_mission_container flex flex-col xl:flex-row xl:gap-[4%] xl:w-full">
-                <div className="vision_statement bg-[#f3f3f3e2] mt-[4%] py-[7%] px-[7%] rounded-3xl ">
+                <div className="vision_statement bg-[#f3f3f3e2] mt-[4%] py-[7%] px-[7%] 2xl:py-[9%] rounded-3xl ">
                   <Eye className="w-5 h-auto text-[#4361EE]" />
                   <p className="font-bricolage tracking-tigher font-semibold">
                     Our vision
@@ -146,7 +146,7 @@ function HomePage() {
               </div>
             </div>
 
-            <div className="metrics_container mb-[6%] gap-4 grid grid-cols-2 xl:w-[85%] ">
+            <div className="metrics_container mb-[6%] gap-4 xl:gap-6 grid grid-cols-2 xl:w-[85%] ">
               <Metrics title="120+" subtext="Projects Completed" />
               <Metrics title="250+" subtext="Happy Clients" />
               <Metrics title="$10M+" subtext="Project Value" />
@@ -169,7 +169,7 @@ function HomePage() {
                   subtext="We offer a wide range of properties to choose from, including residential, commercial, and industrial properties."
                 />
               </div>
-              <div className="button_container xl:w-[70%] 2xl:w-[90%] 2xl:mt-[-3%]">
+              <div className="button_container xl:w-[70%] 2xl:w-[90%] md:mt-[-3%] 2xl:mt-[-3%]">
                 <Button
                   text="Learn more"
                   variants="primary"
@@ -216,7 +216,7 @@ function HomePage() {
       </div>
 
       {/* Properties Tag_section */}
-      <div className="tag_section_container mx-[5%] 2xl:mx-[10%] mt-[30%] xl:mt-[20%] mb-[11%] xl:w-[50%] 2xl:w-[40%] xl:mb-0 2xl:mt-[6%]">
+      <div className="tag_section_container mx-[5%] 2xl:mx-[10%] mt-[30%] xl:mt-[15%] mb-[11%] xl:w-[50%] 2xl:w-[40%] xl:mb-0 2xl:mt-[6%]">
         <div className="tag content">
           <SectionTags
             name="categories"
@@ -226,7 +226,7 @@ function HomePage() {
           />
         </div>
 
-        <div className="button_container xl:w-[60%] 2xl:w-[55%] xl:mt-[-2%] 2xl:mt-[-6%]">
+        <div className="button_container xl:w-[60%] 2xl:w-[55%] md:mt-[-5%] xl:mt-[-2%] 2xl:mt-[-6%]">
           <Button text="Learn more" variants="primary" href="/categories" />
         </div>
       </div>
@@ -336,9 +336,9 @@ function HomePage() {
 
       {/* Services */}
       <div className="main_services_container">
-        <div className="main_services-content mx-[5%] 2xl:mx-[10%] mt-[30%] 2xl:mt-0">
+        <div className="main_services-content mx-[5%]  2xl:mx-[10%] mt-[30%] xl:mt-[18%] 2xl:mt-0">
           <div className="tag_section xl:w-[60%]">
-            <div className="tag content">
+            <div className="tag content 2xl:w-[75%]">
               <SectionTags
                 name="services"
                 imageSrc="/Main_Assets/Tag_Icon_blue.svg"
@@ -346,7 +346,7 @@ function HomePage() {
                 subtext="We offer a wide range of properties to choose from, including residential, commercial, and industrial properties."
               />
             </div>
-            <div className="button_container xl:w-[60%] 2xl:w-[70%] xl:mt-[-2%] 2xl:mt-[-5%]">
+            <div className="button_container xl:w-[60%] 2xl:w-[50%] md:mt-[-5%] xl:mt-[-2%] 2xl:mt-[-5%]">
               <Button text="Learn more" variants="primary" href="/categories" />
             </div>
           </div>

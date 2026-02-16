@@ -32,7 +32,7 @@ const Testimonial: React.FC<TestimonialComponentProps> = ({ testimonials }) => {
 
   return (
     <div className="testimonial_section-container">
-      <div className="testimonial_content mx-[5%] 2xl:mx-[10%] flex flex-col gap-8 xl:flex-row xl:items-center xl:gap-12">
+      <div className="testimonial_content mx-[5%] 2xl:mx-[10%] flex flex-col gap-8 md:gap-12 xl:flex-row xl:items-center xl:gap-12">
         {/* Left Section - ~60-70% on xl */}
         <div className="left_section xl:flex-[2] xl:mb-[7%] 2xl:mb-[9%] xl:min-w-0">
           <div className="testimonial_tag">
@@ -54,7 +54,7 @@ const Testimonial: React.FC<TestimonialComponentProps> = ({ testimonials }) => {
               />
             </div>
             <div className="name-title_text flex flex-col gap-4 xl:gap-8 xl:w-[80%] ">
-              <div className="description font-mona text-base md:text-2xl xl:text-base 2xl:text-lg leading-6 md:leading-8">
+              <div className="description font-mona text-base md:text-lg xl:text-base 2xl:text-lg leading-6 md:leading-8">
                 {description}
               </div>
               <div className="name_title hidden xl:flex xl:flex-col xl:gap-0">
