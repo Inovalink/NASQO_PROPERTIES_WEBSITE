@@ -1,11 +1,176 @@
-import React from 'react'
+import React from "react";
+import Button from "../components/button";
+import SectionTags from "../components/SectionTags";
+import Metrics from "../components/Metrics";
+import Image from "next/image";
 
 function page() {
   return (
-    <div>
-      About Page
+    <div className="about_page_container">
+      <div className="about_page_content">
+        {/* Hero Section */}
+        <div
+          className="Main_Hero_Container relative w-screen h-screen bg-cover bg-center"
+          style={{ backgroundImage: `url(/HomeAssets/Img9.jpg)` }}
+        >
+          <div className="overlay_section inset-0 absolute bg-black/50 z-0" />
+
+          <div className="relative z-10 flex flex-col items-left h-full text-white justify-center">
+            <div className="hero-texts ml-[5%] md:ml-[5%] 2xl:ml-[10%] font-bricolage">
+              <p className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-semibold tracking-tight">
+                We are Nasqo Properties
+              </p>
+
+              <div className="button w-[90%] xl:w-[25%] 2xl:w-[35%] mt-[8%] 2xl:mt-[2%]">
+                <Button text="learn more" variants="secondary" href="/about" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* About Section */}
+        <div className="about_section_container">
+          <div className="about_section_main_content mx-[5%] 2xl:mx-[10%] 2xl:py-[5%]">
+            <div className="section_tag 2xl:w-[40%]">
+              <SectionTags
+                name="about us"
+                imageSrc="/Main_Assets/Tag_Icon_blue.svg"
+                header="About Nasqo Properties"
+              />
+            </div>
+
+            <div className="about_section_text">
+              <p className="about_description font-bricolage font-semibold text-neutral-500 xl:text-xl xl:mt-[-8%] 2xl:text-3xl 2xl:tracking-tight 2xl:mt-8">
+                At Homely, we are committed to helping individuals, families,
+                and investors discover properties that truly match their dreams
+                and long-term goals. With a strong focus on transparency,
+                professionalism, and client satisfaction, we simplify the entire
+                real estate journey—from property search and acquisition to
+                documentation and ownership support—ensuring every transaction
+                is smooth and stress-free. Our team combines deep market
+                expertise, trusted partnerships, and personalized service to
+                deliver carefully verified properties in prime and fast-growing
+                locations, giving our clients confidence in every decision they
+                make. We also believe that finding the right property should be
+                an empowering experience, which is why we provide clear
+                guidance, honest recommendations, and ongoing support even after
+                the purchase is completed. Whether you are purchasing your first
+                home, investing in land, or expanding your property portfolio,
+                we are dedicated to providing reliable guidance, secure
+                opportunities, and lasting value. At the heart of everything we
+                do is a simple promise: to build lasting relationships through
+                trust, deliver quality properties that meet modern standards,
+                and help our clients secure a future they can proudly and
+                confidently call their own.
+              </p>
+            </div>
+
+            <div className="metrics_container flex flex-col gap-5 my-[10%] w-[48%] md:grid md:grid-cols-2 md:w-full lg:flex-row lg:gap-4 xl:gap-6 2xl:gap-8 xl:grid-cols-4 xl:my-[5%] 2xl:my-[5%]">
+              <Metrics title="120+" subtext="Projects Completed" />
+              <Metrics title="250+" subtext="Happy Clients" />
+              <Metrics title="$10M+" subtext="Project Value" />
+              <Metrics title="90%" subtext="Properties Sold" />
+            </div>
+          </div>
+        </div>
+
+
+        {/* -------------------VISION AND MISSION SECTION------------------- */}
+
+        <div className="mission_and_vision_container border-t border-t-neutral-200 2xl:mx-[10%]">
+
+
+          {/* -------------------VISION SECTION------------------- */}
+          <div className="flex flex-col xl:flex-row w-full min-h-screen 2xl:gap-14 2xl:items-center">
+            <div className="xl:w-1/2">
+              <div className="image_container relative overflow-hidden 2xl:h-[80vh] rounded-3xl">
+                <Image
+                  src="/HomeAssets/Img10.jpg"
+                  alt="mission"
+                  fill
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div className="xl:w-1/2 flex flex-col 2xl:gap-14 2xl:mt-[-3%]">
+              <div className="section_tags 2xl:w-[70%]">
+                <SectionTags
+                  name="mission and vision"
+                  imageSrc="/Main_Assets/Tag_Icon_blue.svg"
+                  header="What drives us"
+                  subtext="We began with a vision to connect people to premium properties that suit their lifestyles and needs."
+                />
+              </div>
+
+              <div className="vision_statement font-bricolage font-semibold 2xl:text-4xl 2xl:w-[85%] 2xl:mt-[-8%] 2xl:tracking-tighter">
+                A trusted real estate brand leading the market, simplifying
+                property ownership for everyone, while building strong and
+                thriving communities
+              </div>
+
+              <div className="description_container font-mona text-neutral-500 2xl:text-base bg-[#f7f7f7] border border-neutral-200 2xl:w-[88%] rounded-3xl 2xl:p-[3%]">
+                We aim to create a reliable property ecosystem where individuals
+                and businesses can confidently acquire secure, well-verified
+                properties through transparent processes, expert guidance, and
+                community-focused developments that promote long-term growth and
+                sustainable living. By combining market expertise with
+                innovative solutions, we ensure every client experiences a
+                seamless property journey from search to ownership. Our
+                commitment is to build lasting value, strengthen communities,
+                and make quality property investment accessible to all.
+              </div>
+            </div>
+          </div>
+
+
+
+
+          {/* -------------------MISSION SECTION------------------- */}
+          <div className="flex flex-col  xl:flex-row-reverse w-full min-h-screen 2xl:gap-14 2xl:items-center">
+            <div className="xl:w-1/2">
+              <div className="image_container relative overflow-hidden 2xl:h-[80vh] rounded-3xl">
+                <Image
+                  src="/HomeAssets/Img9.jpg"
+                  alt="mission"
+                  fill
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div className="xl:w-1/2 flex flex-col 2xl:gap-14 2xl:mt-[-3%]">
+              <div className="section_tags 2xl:w-[70%]">
+                <SectionTags
+                  name="mission and vision"
+                  imageSrc="/Main_Assets/Tag_Icon_blue.svg"
+                  header="Our Mission and Vision"
+                  subtext="We began with a vision to connect people to premium properties that suit their lifestyles and needs."
+                />
+              </div>
+
+              <div className="vision_statement font-bricolage font-semibold 2xl:text-4xl 2xl:w-[85%] 2xl:mt-[-8%] 2xl:tracking-tighter">
+              Reliable property solutions delivered with professionalism, connecting clients with the right opportunities, and maintaining integrity in every transaction.
+              </div>
+
+              <div className="description_container font-mona text-neutral-500 2xl:text-base bg-[#f7f7f7] border border-neutral-200 2xl:w-[88%] rounded-3xl 2xl:p-[3%]">
+                We aim to create a reliable property ecosystem where individuals
+                and businesses can confidently acquire secure, well-verified
+                properties through transparent processes, expert guidance, and
+                community-focused developments that promote long-term growth and
+                sustainable living. By combining market expertise with
+                innovative solutions, we ensure every client experiences a
+                seamless property journey from search to ownership. Our
+                commitment is to build lasting value, strengthen communities,
+                and make quality property investment accessible to all.
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default page
+export default page;
