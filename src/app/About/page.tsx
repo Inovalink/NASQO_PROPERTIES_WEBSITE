@@ -3,8 +3,11 @@ import Button from "../components/button";
 import SectionTags from "../components/SectionTags";
 import Metrics from "../components/Metrics";
 import Image from "next/image";
+import { coreValuesDataAboutPage } from "../Data/AppData";
+import { coreValueProps } from "../Types/types";
 
 function page() {
+  const coreValues: coreValueProps[] = coreValuesDataAboutPage;
   return (
     <div className="about_page_container">
       <div className="about_page_content">
@@ -74,12 +77,9 @@ function page() {
           </div>
         </div>
 
-
         {/* -------------------VISION AND MISSION SECTION------------------- */}
 
         <div className="mission_and_vision_container border-t border-t-neutral-200 2xl:mx-[10%]">
-
-
           {/* -------------------VISION SECTION------------------- */}
           <div className="flex flex-col xl:flex-row w-full min-h-screen 2xl:gap-14 2xl:items-center">
             <div className="xl:w-1/2">
@@ -122,9 +122,6 @@ function page() {
             </div>
           </div>
 
-
-
-
           {/* -------------------MISSION SECTION------------------- */}
           <div className="flex flex-col  xl:flex-row-reverse w-full min-h-screen 2xl:gap-14 2xl:items-center">
             <div className="xl:w-1/2">
@@ -148,7 +145,9 @@ function page() {
               </div>
 
               <div className="vision_statement font-bricolage font-semibold 2xl:text-4xl 2xl:w-[85%] 2xl:mt-[-8%] 2xl:tracking-tighter">
-              Reliable property solutions delivered with professionalism, connecting clients with the right opportunities, and maintaining integrity in every transaction.
+                Reliable property solutions delivered with professionalism,
+                connecting clients with the right opportunities, and maintaining
+                integrity in every transaction.
               </div>
 
               <div className="description_container font-mona text-neutral-500 2xl:text-base bg-[#f7f7f7] border border-neutral-200 2xl:w-[88%] rounded-3xl 2xl:p-[3%]">
@@ -165,8 +164,40 @@ function page() {
             </div>
           </div>
 
+          {/* -------------------CORE VALUES SECTION------------------- */}
+          <div className="core_value_container">
+            <div className="core_value_main_content xl:h-screen mx-[5%] xl:mx-0 2xl:mx-0">
+              <div className="tag_section">
+                <SectionTags
+                  name="core values"
+                  imageSrc="/Main_Assets/Tag_Icon_blue.svg"
+                  header="Our Core Values"
+                  subtext="We are committed to delivering the best possible service to our clients."
+                />
+              </div>
 
+              <div className="core_value_cards_container grid gap-6 xl:grid-cols-3 xl:gap-10">
+                {coreValues.map((coreValue) => {
+                  const Icon = coreValue.icon;
+                  return (
+                    <div
+                      key={coreValue.id}
+                      className="core_value_card_item border border-neutral-200 rounded-3xl p-[6%] xl:h-[20vh] 2xl:p-[8%] flex items-center gap-6"
+                    >
+                      <div className="icon">
+                        <Icon className="w-6 h-auto text-[#4361EE]" />
+                      </div>
 
+                      <div className="text font-mona flex flex-col gap-3 xl:gap-5">
+                        <p className="text-[#4361EE] font-bricolage font-semibold text-lg">{coreValue.title}</p>
+                        <p className="text-neutral-500 text-sm xl:text-base">{coreValue.subtext}</p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
