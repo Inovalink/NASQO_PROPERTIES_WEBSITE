@@ -22,6 +22,16 @@ const HERO_IMAGES = [
   "/PropertiesAssets/Img4.jpg",
 ];
 
+const DISCOVER_PROPERTIES = [
+  { id: "1", name: "Rico Lands", imageSrc: "/PropertiesAssets/Img1.jpg", price: "$78,000" },
+  { id: "2", name: "Young Road Lands", imageSrc: "/PropertiesAssets/Img2.jpg", price: "$78,000" },
+  { id: "3", name: "Crime City Lands", imageSrc: "/PropertiesAssets/Img3.jpg", price: "$78,000" },
+  { id: "4", name: "Good Grain Lands", imageSrc: "/PropertiesAssets/Img4.jpg", price: "$78,000" },
+];
+
+const DISCOVER_DESCRIPTION =
+  "Royal Kingdom Estate ensures efficient land acquisition processes, minimizing bureaucratic obstacles to foster trust and transparency with our clients, while providing expert guidance, secure documentation, and reliable support that guarantees long-term property value and client satisfaction.";
+
 function PropertiesPage() {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -94,7 +104,7 @@ function PropertiesPage() {
             </div>
           </div>
 
-          <div className="main_desc_container lg:px-[5%] 2xl:px-[3%] lg:my-[5%] lg:border lg:border-neutral-200 lg:rounded-3xl lg:bg-neutral-50">
+          <div className="main_desc_container lg:px-[5%] 2xl:px-[3%] 2xl:text-neutral-500 lg:my-[5%] lg:border lg:border-neutral-200 lg:rounded-3xl lg:bg-neutral-50">
             <div className="description_content font-mona text-base my-[10%] xl:my-[4%] xl:text-xl">
               Grace City Prime Land is where life offers you the opportunity to
               blend nature seamlessly with the conveniences of modern living. It
@@ -121,13 +131,13 @@ function PropertiesPage() {
               City Prime Land, where your dream lifestyle becomes a reality.
             </div>
 
-            <div className="lowerside flex flex-col lg:flex-row lg:w-full">
+            <div className="lowerside flex flex-col gap-4 lg:flex-row lg:w-full 2xl:gap-12 xl:mt-[10%] xl:mb-[54]">
               <div className="amenities_container bg-[#191723] p-[7%] xl:p-[4%] lg:w-[50%] rounded-3xl flex flex-col text-center">
                 <div className="header text-white font-bricolage font-semibold text-2xl pb-[4%] 2xl:text-4xl">
                   Community Amenities
                 </div>
 
-                <div className="amenities_list flex flex-col xl:grid xl:grid-cols-2 xl:grid-flow-col xl:grid-rows-4 gap-4 xl:gap-2 border border-[#4361EE] p-[5%] xl:p-[3%] rounded-2xl">
+                <div className="amenities_list flex flex-col xl:grid xl:grid-cols-2 xl:grid-flow-col xl:grid-rows-5 gap-4 xl:gap-2 border border-[#4361EE] p-[5%] xl:p-[3%] rounded-2xl">
                    <div className="flex items-center gap-2">
                      <div className="amenity_item bg-[#4361EE] w-9 h-9 shrink-0 rounded-full flex items-center justify-center">
                        <CctvIcon className="text-white w-6 h-auto"/>
@@ -165,6 +175,34 @@ function PropertiesPage() {
                      </div>
                    </div>
 
+                   <div className="flex items-center gap-2">
+                     <div className="amenity_item bg-[#4361EE] w-9 h-9 shrink-0 rounded-full flex items-center justify-center">
+                       <CctvIcon className="text-white w-6 h-auto"/>
+                     </div>
+                     <div className="name font-mona text-white text-base">
+                       Security Gate P ost
+                     </div>
+                   </div>
+
+
+                   <div className="flex items-center gap-2">
+                     <div className="amenity_item bg-[#4361EE] w-9 h-9 shrink-0 rounded-full flex items-center justify-center">
+                       <CctvIcon className="text-white w-6 h-auto"/>
+                     </div>
+                     <div className="name font-mona text-white text-base">
+                       Security Gate P ost
+                     </div>
+                   </div>
+
+
+                   <div className="flex items-center gap-2">
+                     <div className="amenity_item bg-[#4361EE] w-9 h-9 shrink-0 rounded-full flex items-center justify-center">
+                       <CctvIcon className="text-white w-6 h-auto"/>
+                     </div>
+                     <div className="name font-mona text-white text-base">
+                       Security Gate P ost
+                     </div>
+                   </div>
                    <div className="flex items-center gap-2">
                      <div className="amenity_item bg-[#4361EE] w-9 h-9 shrink-0 rounded-full flex items-center justify-center">
                        <CctvIcon className="text-white w-6 h-auto"/>
@@ -195,11 +233,11 @@ function PropertiesPage() {
                    </div>
                 </div>
               </div>
-              <div className="maps_container bg-white lg:w-[50%] rounded-3xl p-[5%] shadow-lg flex flex-col gap-4">
-                <h3 className="text-[#191723] font-bricolage font-semibold text-2xl">
+              <div className="maps_container bg-white lg:w-[50%] rounded-3xl p-[5%] xl:p-[2.5%] 2xl:p-[2%] shadow-lg flex flex-col gap-3 xl:gap-4">
+                <h3 className="text-[#191723] font-bricolage font-semibold text-xl sm:text-2xl">
                   Location Details
                 </h3>
-                <div className="relative w-full aspect-video max-h-[240px] rounded-2xl overflow-hidden bg-gray-100">
+                <div className="relative w-full rounded-2xl overflow-hidden bg-gray-100 h-[220px] min-h-[200px] sm:h-[260px] sm:min-h-[240px] xl:h-[300px] 2xl:h-[340px]">
                   <iframe
                     title="Map - East Legon, Accra"
                     src="https://www.google.com/maps?q=East+Legon,Accra,Ghana&z=15&output=embed"
@@ -209,21 +247,74 @@ function PropertiesPage() {
                     referrerPolicy="no-referrer-when-downgrade"
                   />
                 </div>
-                <div className="flex flex-wrap items-center justify-between gap-3">
-                  <p className="text-[#191723] font-mona font-semibold text-lg">
+                <div className="flex flex-col items-center gap-3 xl:flex-row xl:justify-between xl:items-center xl:gap-4">
+                  <p className="text-[#191723] font-mona font-semibold text-base sm:text-lg text-center xl:text-left">
                     East Legon-Accra
                   </p>
-                  <Button
-                    text="Download Brochure"
-                    variants="primary"
-                    href="#"
-                  />
+                  <div className="w-full flex justify-center xl:w-auto xl:flex-initial">
+                    <Button
+                      text="Download Brochure"
+                      variants="primary"
+                      href="#"
+                      className="whitespace-nowrap w-auto min-w-[180px] sm:min-w-[200px] xl:min-w-[220px] 2xl:min-w-[240px] xl:px-8 2xl:px-10"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Discover more Properties */}
+      <section className="mx-[5%] 2xl:mx-[10%] mt-16 xl:mt-24 2xl:mt-28 pb-16 xl:pb-24">
+        <div className="max-w-[1600px]">
+          <SectionTags
+            name="Service"
+            imageSrc="/Main_Assets/Tag_Icon_blue.svg"
+            header="Discover more Properties like this"
+            subtext="We began with a vision to help you discover premium properties that perfectly match your lifestyle and aspirations."
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8 mt-8 xl:mt-10">
+            {DISCOVER_PROPERTIES.map((property) => (
+              <div
+                key={property.id}
+                className="services_card_container h-full border border-neutral-300 rounded-3xl"
+              >
+                <div className="image_container relative overflow-hidden w-full h-[30vh] md:h-[20vh] xl:h-[30vh] 2xl:h-[30vh] z-0 rounded-3xl flex items-center justify-center">
+                  <Image
+                    src={property.imageSrc}
+                    alt={property.name}
+                    fill
+                    className="w-full h-full object-cover z-10"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                  <div className="overlay inset-0 absolute bg-black/50 z-10" />
+                  <div className="title absolute bottom-[10%] capitalize font-bricolage font-semibold text-white text-3xl z-20">
+                    {property.name}
+                  </div>
+                </div>
+                <div className="subtext_button_container p-[6%]">
+                  <div className="subtext font-mona text-base leading-5 line-clamp-3">
+                    {DISCOVER_DESCRIPTION}
+                  </div>
+                  <div className="button_container mt-[6%] flex flex-wrap items-center justify-between gap-3">
+                    <span className="font-bricolage font-bold text-[#191723] text-lg xl:text-xl">
+                      {property.price}
+                    </span>
+                    <Button
+                      text="Get in touch"
+                      variants="primary"
+                      href="/Contact"
+                      className="min-w-[180px] w-auto shrink-0"
+                    />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
