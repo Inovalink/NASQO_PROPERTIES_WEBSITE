@@ -241,38 +241,38 @@ export const coreValuesDataAboutPage = [
     {
         id: "1",
         title: "Long lasting service",
-        subtext: "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind. Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
+        subtext: "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind.Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
         icon: FunnelPlus
     },
     {
         id: "2",
         title: "Client-Focused Service",
-        subtext: "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind. Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
+        subtext: "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind.Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
         icon: Users
     },
     {
         id: "3",
         title: "Safe Haven Living",
-        subtext: "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind. Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
+        subtext: "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind.Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
         icon: ShieldCheck
     },
     {
         id: "4",
         title: "Transparent Transactions",
-        subtext: "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind. Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
+        subtext: "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind.Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
         icon: BadgeCent
     },
 
     {
         id: "5",
         title: "Transparent Transactions",
-        subtext: "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind. Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
+        subtext: "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind.Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
         icon: BadgeCent
     },
     {
         id: "6",
         title: "Transparent Transactions",
-        subtext: "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind. Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
+        subtext: "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind.Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
         icon: BadgeCent
     },
 ]
