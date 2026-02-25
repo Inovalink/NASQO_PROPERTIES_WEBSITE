@@ -7,12 +7,19 @@ import {
     CableIcon, 
     ShowerHeadIcon,
     FootprintsIcon,
-    WavesIcon
-    
+    WavesIcon,
+    AmpersandIcon,
+    UtensilsCrossed,
+    Dumbbell,
+    Store,
+    Scissors,
+    Building2,
+    Baby
 } from "lucide-react"
 import { Users } from "lucide-react"
 import { ShieldCheck } from "lucide-react"
 import { BadgeCent } from "lucide-react"
+import type { PropertiesPageItem } from "../Types/types"
 
 export const coreValuesData = [
     {
@@ -102,7 +109,7 @@ export const propertiesData = [
             },
         ],
 
-        href: "/properties",
+        href: "/Properties/grace-city-prime-lands",
         price: "$1,650,500"
     },
     {
@@ -151,11 +158,213 @@ export const propertiesData = [
            
         ],
 
-        href: "/properties",
+        href: "/Properties/rocky-mountains",
         price: "$1,650,500"
     }
 ]
 
+
+
+
+
+
+export const propertiesPageData: PropertiesPageItem[] = [
+    {
+        id: "1",
+        slug: "rocky-mountains",
+        heroTitle: 	"Rocky Mountains",
+        heroImages: [
+            "/PropertiesAssets/Img11.jpeg",
+            "/PropertiesAssets/Img22.jpeg",
+            "/PropertiesAssets/Img33.jpeg",
+            "/PropertiesAssets/Img44.jpeg",
+            "/PropertiesAssets/Img55.jpeg",
+            "/PropertiesAssets/Img66.jpeg",
+        ],
+        ctoHref: "/Contact",
+        SectionTag: "Properties" ,  
+        priceRange: "$10,000 - $100,000",
+        description: "Rocky Mountains is where life offers you the opportunity to blend nature seamlessly with the conveniences of modern living. It is a carefully planned 500-acre eco-friendly community located in the lush, serene enclave of Aburi, in the Eastern Region. This development offers fully serviced plots, designed to provide a sustainable and organic lifestyle, freeing you from the burdens of infrastructure development. Grace City Prime Land is more than just a residential area; it's a model community birthed from the high demand of our discerning clientele. Responding to countless requests, RKE has stepped in to create a space where essential infrastructure- including electricity, water, asphalt roads, sidewalks, a green park, efficient drainage, a secure gate post, parameter fence wall and ambient street lights – is already in place. This means you can focus on building your dream home and embracing a holistic way of life from day one, without the stress of coordinating these essential amenities yourself. Grace City Prime Land offers a unique opportunity to own fully serviced plots with convenient and affordable payment terms. The community is within reasonable proximity to major landmarks and amenities, and just a 40-minute drive from the airport, this is your chance to move into a community that takes away the burden of infrastructure worries. Embrace the ease of holistic and organic living at Grace City Prime Land, where your dream lifestyle becomes a reality.",
+        amenities: [
+            {
+                id: "1",
+                name: "Security Gate Post",
+                icon: CctvIcon
+            },
+            {
+                id: "2",
+                name: "Perimeter fence wall",
+                icon: FenceIcon
+            },
+            {
+                id: "3",
+                name: "Fast and Reliable internet",
+                icon: WifiIcon
+            },
+            {
+                id: "4",
+                name: "Asphalt Roads",
+                icon: BusFrontIcon
+            },
+            {
+                id: "5",
+                name: "Good electricity",
+                icon: CableIcon
+            },
+          
+            {
+                id: "6",
+                name: "Good water supply",
+                icon: ShowerHeadIcon
+            },
+            {
+                id: "7",
+                name: "Ultramodern washrooms",
+                icon: CctvIcon
+            },
+            {
+                id: "8",
+                name: "Sidewalks",
+                icon: FootprintsIcon
+            },
+            {
+                id: "9",
+                name: "Swimming Pool",
+                icon: WavesIcon
+            },
+        ],
+
+        href: "/Properties/rocky-mountains",
+        price: "$1,650,500",
+        locationDetails: {
+            sectionTitle: "Location Details",
+            locationName: "East Legon-Accra",
+            mapEmbedUrl: "https://www.google.com/maps?q=East+Legon,Accra,Ghana&z=15&output=embed",
+            mapTitle: "Map - East Legon, Accra",
+            brochureButtonText: "Download Brochure",
+            brochureHref: "#",
+        }
+    },
+    {
+        id: "2",
+        slug: "rocky-mountains-estate",
+        title: "Rocky Mountains Estate",
+        heroTitle: "Rocky Mountains Estate",
+        location: "Palm Springs, CA",
+        description: "Rocky Mountains is where life offers you the opportunity to blend nature seamlessly with the conveniences of modern living. It is a carefully planned 500-acre eco-friendly community located in the lush, serene enclave of Aburi, in the Eastern Region. This development offers fully serviced plots, designed to provide a sustainable and organic lifestyle, freeing you from the burdens of infrastructure development. Grace City Prime Land is more than just a residential area; it's a model community birthed from the high demand of our discerning clientele. Responding to countless requests, RKE has stepped in to create a space where essential infrastructure- including electricity, water, asphalt roads, sidewalks, a green park, efficient drainage, a secure gate post, parameter fence wall and ambient street lights – is already in place. This means you can focus on building your dream home and embracing a holistic way of life from day one, without the stress of coordinating these essential amenities yourself. Grace City Prime Land offers a unique opportunity to own fully serviced plots with convenient and affordable payment terms. The community is within reasonable proximity to major landmarks and amenities, and just a 40-minute drive from the airport, this is your chance to move into a community that takes away the burden of infrastructure worries. Embrace the ease of holistic and organic living at Grace City Prime Land, where your dream lifestyle becomes a reality.",
+        imageSrc: "/HomeAssets/Img11.jpg",
+        heroImages: [
+            "/HomeAssets/Img10.jpg",
+            "/HomeAssets/Img11.jpg",
+            "/PropertiesAssets/Img1.jpg",
+            "/PropertiesAssets/Img2.jpg",
+            "/PropertiesAssets/Img3.jpg",
+            "/PropertiesAssets/Img4.jpg",
+        ],
+        amenities: [
+            { id: "1", name: "Gated community", icon: FenceIcon },
+            { id: "2", name: "24/7 security", icon: CctvIcon },
+            { id: "3", name: "Community swimming pool", icon: WavesIcon },
+            { id: "4", name: "Restaurant and bar", icon: UtensilsCrossed },
+            { id: "5", name: "Gym", icon: Dumbbell },
+            { id: "6", name: "Supermarket", icon: Store },
+            { id: "7", name: "Unisex saloon", icon: Scissors },
+            { id: "8", name: "Laundry services office", icon: ShowerHeadIcon },
+            { id: "9", name: "Children playground", icon: Baby },
+            { id: "10", name: "On-site facility management office", icon: Building2 },
+        ],
+        href: "/Properties/rocky-mountains-estate",
+        price: "$50,000 - $85,000",
+        priceTiers: [
+            { label: "2 bedroom semi-detached", price: "$50,000" },
+            { label: "2 bedroom detached", price: "$60,000" },
+            { label: "3 bedroom", price: "$75,000" },
+            { label: "4 bedroom", price: "$85,000" },
+        ],
+        paymentMode: "Pay 30% deposit and pay the rest in 3 years (monthly instalment)",
+        paymentDeposits: [
+            { label: "30% of $50,000", amount: "$15,000" },
+            { label: "30% of $60,000", amount: "$18,000" },
+            { label: "30% of $75,000", amount: "$22,500" },
+            { label: "30% of $85,000", amount: "$25,500" },
+        ],
+        additionalInfo: "All rooms ensuite. Wardrobes, kitchen cabinet, tiled compound, solar power supply available in case of power-outage. Reserved poly tank also available.",
+        locationDetails: {
+            sectionTitle: "Location Details",
+            locationName: "Palm Springs, CA",
+            mapEmbedUrl: "https://www.google.com/maps?q=Palm+Springs,CA,USA&z=15&output=embed",
+            mapTitle: "Map - Palm Springs, CA",
+            brochureButtonText: "Download Brochure",
+            brochureHref: "#",
+        }
+    },
+    {
+        id: "3",
+        slug: "rico-lands",
+        heroTitle: "Rico Lands",
+        ctoHref: "/Contact",
+        SectionTag: "Properties",
+        priceRange: "$45,000 - $85,000",
+        description: "Rocky Mountains is where life offers you the opportunity to blend nature seamlessly with the conveniences of modern living. It is a carefully planned 500-acre eco-friendly community located in the lush, serene enclave of Aburi, in the Eastern Region. This development offers fully serviced plots, designed to provide a sustainable and organic lifestyle, freeing you from the burdens of infrastructure development. Grace City Prime Land is more than just a residential area; it's a model community birthed from the high demand of our discerning clientele. Responding to countless requests, RKE has stepped in to create a space where essential infrastructure- including electricity, water, asphalt roads, sidewalks, a green park, efficient drainage, a secure gate post, parameter fence wall and ambient street lights – is already in place. This means you can focus on building your dream home and embracing a holistic way of life from day one, without the stress of coordinating these essential amenities yourself. Grace City Prime Land offers a unique opportunity to own fully serviced plots with convenient and affordable payment terms. The community is within reasonable proximity to major landmarks and amenities, and just a 40-minute drive from the airport, this is your chance to move into a community that takes away the burden of infrastructure worries. Embrace the ease of holistic and organic living at Grace City Prime Land, where your dream lifestyle becomes a reality.",
+        amenities: [
+            {
+                id: "1",
+                name: "Security Gate Post",
+                icon: CctvIcon
+            },
+            {
+                id: "2",
+                name: "Perimeter fence wall",
+                icon: FenceIcon
+            },
+            {
+                id: "3",
+                name: "Fast and Reliable internet",
+                icon: WifiIcon
+            },
+            {
+                id: "4",
+                name: "Asphalt Roads",
+                icon: BusFrontIcon
+            },
+            {
+                id: "5",
+                name: "Good electricity",
+                icon: CableIcon
+            },
+            {
+                id: "6",
+                name: "Good water supply",
+                icon: ShowerHeadIcon
+            },
+            {
+                id: "7",
+                name: "Ultramodern washrooms",
+                icon: CctvIcon
+            },
+            {
+                id: "8",
+                name: "Sidewalks",
+                icon: FootprintsIcon
+            },
+            {
+                id: "9",
+                name: "Swimming Pool",
+                icon: WavesIcon
+            },
+        ],
+        href: "/Properties/rico-lands",
+        price: "$78,000",
+        locationDetails: {
+            sectionTitle: "Location Details",
+            locationName: "Aburi, Eastern Region",
+            mapEmbedUrl: "https://www.google.com/maps?q=Aburi,Eastern+Region,Ghana&z=15&output=embed",
+            mapTitle: "Map - Aburi, Eastern Region",
+            brochureButtonText: "Download Brochure",
+            brochureHref: "#",
+        }
+    }
+]
 
 
 
