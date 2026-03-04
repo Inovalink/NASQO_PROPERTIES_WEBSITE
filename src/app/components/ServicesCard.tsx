@@ -29,7 +29,7 @@ const ServicesCard:React.FC<servicesCardProps> = ({ id, imageSrc, title, subtext
       </div>
 
       <div className="button_container mt-[6%]">
-        <Button text="Learn more" variants="primary" href="/services" className="min-w-[180px] w-auto shrink-0" />
+        <Button text="Learn more" variants="primary" href="/Services" className="min-w-[180px] w-auto shrink-0" />
       </div>
     </div>
     </div>

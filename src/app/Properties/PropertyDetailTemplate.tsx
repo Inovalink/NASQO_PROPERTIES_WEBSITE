@@ -59,7 +59,7 @@ export default function PropertyDetailTemplate({ slug }: PropertyDetailTemplateP
           className="absolute inset-0 bg-cover bg-center transition-opacity duration-500"
           style={{ backgroundImage: `url(${heroImages[activeIndex]})` }}
         />
-        <div className="absolute inset-0 z-0 pointer-events-none bg-black/50" aria-hidden />
+        <div className="absolute inset-0 z-0 pointer-events-none bg-black/2  0" aria-hidden />
         <div className="absolute inset-0 z-0 pointer-events-none bg-gradient-to-b from-black/20 via-transparent to-black/70" aria-hidden />
 
         <div className="relative z-10 flex flex-col h-[85vh] min-h-[500px]">

@@ -74,3 +74,16 @@ export interface PropertiesPageItem {
     /** Optional: extra info (e.g. "All rooms ensuite...") */
     additionalInfo?: string;
 }
+
+/** Single item in services page data */
+export interface ServicesPageItem {
+  id: string;
+  slug: string;
+  heroTitle?: string;
+  heroImages?: string[];
+  imageSrc?: string;
+  ctoHref?: string;
+  SectionTag?: string;
+  description: string;
+  additionalInfo?: string;
+}

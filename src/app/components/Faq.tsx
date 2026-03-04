@@ -15,9 +15,10 @@ export interface faqItemProps {
 interface FaqProps {
   faqs: faqItemProps[];
   imageSrc?: string;
+  className?: string;
 }
 
-const Faq: React.FC<FaqProps> = ({ faqs, imageSrc = "/HomeAssets/Img11.jpg" }) => {
+const Faq: React.FC<FaqProps> = ({ faqs, imageSrc = "/HomeAssets/Img11.jpg", className }) => {
   const [openId, setOpenId] = useState<string | null>(faqs[0]?.id ?? null);
 
   const toggle = (id: string) => {
@@ -25,7 +26,7 @@ const Faq: React.FC<FaqProps> = ({ faqs, imageSrc = "/HomeAssets/Img11.jpg" }) =
   };
 
   return (
-    <div className="main_faq_container flex flex-col xl:flex-row xl:gap-12 2xl:gap-16 xl:items-stretch">
+    <div className={`main_faq_container flex flex-col xl:flex-row xl:gap-12 2xl:gap-16 xl:items-stretch xl:justify-start text-left ${className ?? ""}`.trim()}>
       {/* Left Column - Image: visible only on xl and 2xl */}
       <div className="faq_image_container hidden xl:block xl:flex-1 xl:min-w-0 xl:max-w-[50%]">
         <div className="image_container relative overflow-hidden w-full h-[30vh] xl:h-full xl:min-h-[400px] 2xl:min-h-[500px] rounded-3xl">

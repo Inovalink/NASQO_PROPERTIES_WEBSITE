@@ -5,9 +5,10 @@ import Button from "../components/button";
 import SectionTags from "../components/SectionTags";
 import Metrics from "../components/Metrics";
 import Image from "next/image";
-import { coreValuesDataAboutPage } from "../Data/AppData";
+import { coreValuesDataAboutPage, faqData } from "../Data/AppData";
 import { coreValueProps } from "../Types/types";
 import Faq from "../components/Faq";
+import DescriptionHero from "../components/DescriptionHero";
 
 const ABOUT_DESCRIPTION_FULL =
   "At Homely, we are committed to helping individuals, families, and investors discover properties that truly match their dreams and long-term goals. With a strong focus on transparency, professionalism, and client satisfaction, we simplify the entire real estate journey—from property search and acquisition to documentation and ownership support—ensuring every transaction is smooth and stress-free. Our team combines deep market expertise, trusted partnerships, and personalized service to deliver carefully verified properties in prime and fast-growing locations, giving our clients confidence in every decision they make. We also believe that finding the right property should be an empowering experience, which is why we provide clear guidance, honest recommendations, and ongoing support even after the purchase is completed. Whether you are purchasing your first home, investing in land, or expanding your property portfolio, we are dedicated to providing reliable guidance, secure opportunities, and lasting value. At the heart of everything we do is a simple promise: to build lasting relationships through trust, deliver quality properties that meet modern standards, and help our clients secure a future they can proudly and confidently call their own.";
@@ -111,7 +112,7 @@ function page() {
                 />
               </div>
 
-              <div className="vision_statement font-bricolage font-bold  text-lg leading-5 mt-[-6%] md:text-2xl md:leading-7 2xl:text-4xl 2xl:w-[85%] 2xl:mt-[-8%] 2xl:tracking-tighter">
+              <div className="vision_statement font-bricolage font-bold  text-lg leading-5 mt-[-6%] md:text-2xl md:leading-7 2xl:leading-10 2xl:text-4xl 2xl:w-[85%] 2xl:mt-[-8%] 2xl:tracking-tighter">
                 A trusted real estate brand leading the market, simplifying
                 property ownership for everyone, while building strong and
                 thriving communities
@@ -153,7 +154,7 @@ function page() {
                 />
               </div>
 
-              <div className="vision_statement font-bricolage font-bold text-lg leading-5 xl:leading-9 mt-[-6%] md:text-2xl md:leading-7 2xl:text-4xl 2xl:w-[85%] 2xl:mt-[-8%] 2xl:tracking-tighter">
+              <div className="vision_statement font-bricolage font-bold text-lg leading-5 xl:leading-9 mt-[-6%] md:text-2xl md:leading-7 2xl:leading-10 2xl:text-4xl 2xl:w-[85%] 2xl:mt-[-8%] 2xl:tracking-tighter">
                 Reliable property solutions delivered with professionalism,
                 connecting clients with the right opportunities, and maintaining
                 integrity in every transaction.
@@ -215,37 +216,18 @@ function page() {
 
           {/* about_description_hero section */}
 
-          <div className="about_description_hero">
-            <div className="content">
-              <div className="image_container relative overflow-hidden h-[50vh] z-0 rounded-3xl mb-[10%] xl:h-[90vh]">
-                <Image
-                  src="/HomeAssets/Img31.jpg"
-                  alt="about"
-                  fill
-                  className="object-cover"
-                />
+          <DescriptionHero
+            imageSrc="/HomeAssets/Img31.jpg"
+            imageAlt="about"
+            title={["Your Home,", "Simplified"]}
+            subtitle="Every search leads closer to a place where comfort meets convenience. From the first glance to the final say, finding the perfect property becomes effortless, turning dreams into a home that truly feels like yours. Spaces that inspire, neighborhoods that welcome, and opportunities that grow with every choice. Every detail, from light-filled rooms to thoughtfully designed layouts, comes together to create a life well-lived. A home isn't just walls and roofs—it's where stories unfold, memories are made, and futures are built."
+            tagline="Smart, Elegant"
+          />
 
-                {/* Overlay text — visible only on lg, xl, 2xl */}
-                <div className="absolute inset-0 z-10 hidden lg:flex flex-col justify-between p-6 lg:p-8 xl:p-10 2xl:p-12">
-                  <div className="flex flex-col gap-4 lg:gap-5 xl:gap-6 2xl:gap-80">
-                    <h2 className="font-bricolage font-bold text-white text-left leading-tight">
-                      <span className="block lg:text-2xl xl:text-3xl 2xl:text-4xl">Your Home,</span>
-                      <span className="block lg:text-2xl xl:text-3xl 2xl:text-4xl">Simplified</span>
-                    </h2>
-                    <p className="font-mona text-white text-left max-w-xl lg:text-sm xl:text-base 2xl:text-lg leading-relaxed opacity-95">
-                      Every search leads closer to a place where comfort meets convenience. From the first glance to the final say, finding the perfect property becomes effortless, turning dreams into a home that truly feels like yours. Spaces that inspire, neighborhoods that welcome, and opportunities that grow with every choice. Every detail, from light-filled rooms to thoughtfully designed layouts, comes together to create a life well-lived. A home isn&apos;t just walls and roofs—it&apos;s where stories unfold, memories are made, and futures are built.
-                    </p>
-                  </div>
-                  <p className="font-bricolage font-bold text-white self-end lg:text-2xl xl:text-3xl 2xl:text-4xl">
-                    Smart, Elegant
-                  </p>
-                </div>
-              </div>
-            </div>
+
+          <div className="mb-16 2xl:my-[15%] w-full">
+            <Faq faqs={faqData} className="w-full" />
           </div>
-
-
-          {/* <Faq faqs={faqData} /> */}
         </div>
       </div>
     </div>

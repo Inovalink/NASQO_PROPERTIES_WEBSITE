@@ -16,10 +16,13 @@ function Navbar() {
         id: 2, path: '/About', name: 'About' 
       },
       {
-        id: 3, path: '/Properties', name: 'Properties' 
+        id: 3, path: '/Services', name: 'Services' 
       },
       {
-        id: 4, path: '/Contact', name: 'Contact' 
+        id: 4, path: '/Properties', name: 'Properties' 
+      },
+      {
+        id: 5, path: '/Contact', name: 'Contact' 
       },
     ]
 

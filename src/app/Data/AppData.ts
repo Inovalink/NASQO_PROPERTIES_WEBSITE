@@ -1,407 +1,520 @@
-import { 
-    FunnelPlus, 
-    CctvIcon, 
-    FenceIcon, 
-    WifiIcon, 
-    BusFrontIcon, 
-    CableIcon, 
-    ShowerHeadIcon,
-    FootprintsIcon,
-    WavesIcon,
-    AmpersandIcon,
-    UtensilsCrossed,
-    Dumbbell,
-    Store,
-    Scissors,
-    Building2,
-    Baby
-} from "lucide-react"
-import { Users } from "lucide-react"
-import { ShieldCheck } from "lucide-react"
-import { BadgeCent } from "lucide-react"
-import type { PropertiesPageItem } from "../Types/types"
+import {
+  FunnelPlus,
+  CctvIcon,
+  FenceIcon,
+  WifiIcon,
+  BusFrontIcon,
+  CableIcon,
+  ShowerHeadIcon,
+  FootprintsIcon,
+  WavesIcon,
+  AmpersandIcon,
+  UtensilsCrossed,
+  Dumbbell,
+  Store,
+  Scissors,
+  Building2,
+  Baby,
+} from "lucide-react";
+import { Users } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
+import { BadgeCent } from "lucide-react";
+import type { PropertiesPageItem } from "../Types/types";
+import type { ServicesPageItem } from "../Types/types";
 
 export const coreValuesData = [
-    {
-        id: "1", 
-        title: "Long lasting service",
-        subtext: "Quality developments built for durability and long-term value.",
-        icon: FunnelPlus
-    },
-    {
-        id: "2", 
-        title: "Client-Focused Service",
-        subtext: "Quality developments built for durability and long-term value.",
-        icon: Users
-    },
-    {
-        id: "3", 
-        title: "Safe Haven Living",
-        subtext: "Quality developments built for durability and long-term value.",
-        icon: ShieldCheck
-    },
-    {
-        id: "4", 
-        title: "Transparent Transactions",
-        subtext: "Quality developments built for durability and long-term value.",
-        icon: BadgeCent
-    },
-]
+  {
+    id: "1",
+    title: "Long lasting service",
+    subtext: "Quality developments built for durability and long-term value.",
+    icon: FunnelPlus,
+  },
+  {
+    id: "2",
+    title: "Client-Focused Service",
+    subtext: "Quality developments built for durability and long-term value.",
+    icon: Users,
+  },
+  {
+    id: "3",
+    title: "Safe Haven Living",
+    subtext: "Quality developments built for durability and long-term value.",
+    icon: ShieldCheck,
+  },
+  {
+    id: "4",
+    title: "Transparent Transactions",
+    subtext: "Quality developments built for durability and long-term value.",
+    icon: BadgeCent,
+  },
+];
 
-
-
-
-
-// Properties Data 
+// Properties Data
 export const propertiesData = [
-    {
+  {
+    id: "1",
+    title: "Modern luxe villa",
+    location: "Palm Springs, CA",
+    description:
+      "Experience luxury living at modern luxe villa, located at 20 s aurora ave, miami. priced at $1,650,500, this 560 ft² smart home offers 4 bedrooms, 3 bathrooms, and spacious living areas. enjoy energy efficiency, natural light, security systems, outdoor spaces, and 2 bar areas—perfect for 8+ guests. Built in 2025",
+    imageSrc: "/HomeAssets/Img10.jpg",
+    amenities: [
+      {
         id: "1",
-        title: "Modern luxe villa",
-        location: "Palm Springs, CA",
-        description: "Experience luxury living at modern luxe villa, located at 20 s aurora ave, miami. priced at $1,650,500, this 560 ft² smart home offers 4 bedrooms, 3 bathrooms, and spacious living areas. enjoy energy efficiency, natural light, security systems, outdoor spaces, and 2 bar areas—perfect for 8+ guests. Built in 2025",
-        imageSrc: "/HomeAssets/Img10.jpg",
-        amenities: [
-            {
-                id: "1",
-                name: "Security Gate Post",
-                icon: CctvIcon
-            },
-            {
-                id: "2",
-                name: "Perimeter fence wall",
-                icon: FenceIcon
-            },
-            {
-                id: "3",
-                name: "Fast and Reliable internet",
-                icon: WifiIcon
-            },
-            {
-                id: "4",
-                name: "Asphalt Roads",
-                icon: BusFrontIcon
-            },
-            {
-                id: "5",
-                name: "Good electricity",
-                icon: CableIcon
-            },
-          
-            {
-                id: "6",
-                name: "Good water supply",
-                icon: ShowerHeadIcon
-            },
-            {
-                id: "7",
-                name: "Ultramodern washrooms",
-                icon: CctvIcon
-            },
-            {
-                id: "8",
-                name: "Sidewalks",
-                icon: FootprintsIcon
-            },
-            {
-                id: "9",
-                name: "Swimming Pool",
-                icon: WavesIcon
-            },
-        ],
+        name: "Security Gate Post",
+        icon: CctvIcon,
+      },
+      {
+        id: "2",
+        name: "Perimeter fence wall",
+        icon: FenceIcon,
+      },
+      {
+        id: "3",
+        name: "Fast and Reliable internet",
+        icon: WifiIcon,
+      },
+      {
+        id: "4",
+        name: "Asphalt Roads",
+        icon: BusFrontIcon,
+      },
+      {
+        id: "5",
+        name: "Good electricity",
+        icon: CableIcon,
+      },
 
-        href: "/Properties/grace-city-prime-lands",
-        price: "$1,650,500"
-    },
-    {
+      {
+        id: "6",
+        name: "Good water supply",
+        icon: ShowerHeadIcon,
+      },
+      {
+        id: "7",
+        name: "Ultramodern washrooms",
+        icon: CctvIcon,
+      },
+      {
+        id: "8",
+        name: "Sidewalks",
+        icon: FootprintsIcon,
+      },
+      {
+        id: "9",
+        name: "Swimming Pool",
+        icon: WavesIcon,
+      },
+    ],
+
+    href: "/Properties/grace-city-prime-lands",
+    price: "$1,650,500",
+  },
+  {
+    id: "1",
+    title: "Rocky Mountains",
+    location: "Palm Springs, CA",
+    description:
+      "Experience luxury living at modern luxe villa, located at 20 s aurora ave, miami. priced at $1,650,500, this 560 ft² smart home offers 4 bedrooms, 3 bathrooms, and spacious living areas. enjoy energy efficiency, natural light, security systems, outdoor spaces, and 2 bar areas—perfect for 8+ guests. Built in 2025",
+    imageSrc: "/HomeAssets/Img11.jpg",
+    amenities: [
+      {
         id: "1",
-        title: "Rocky Mountains",
-        location: "Palm Springs, CA",
-        description: "Experience luxury living at modern luxe villa, located at 20 s aurora ave, miami. priced at $1,650,500, this 560 ft² smart home offers 4 bedrooms, 3 bathrooms, and spacious living areas. enjoy energy efficiency, natural light, security systems, outdoor spaces, and 2 bar areas—perfect for 8+ guests. Built in 2025",
-        imageSrc: "/HomeAssets/Img11.jpg",
-        amenities: [
-            {
-                id: "1",
-                name: "Security Gate Post",
-                icon: CctvIcon
-            },
-            {
-                id: "2",
-                name: "Perimeter fence wall",
-                icon: FenceIcon
-            },
-            {
-                id: "3",
-                name: "Fast and Reliable internet",
-                icon: WifiIcon
-            },
-            {
-                id: "4",
-                name: "Asphalt Roads",
-                icon: BusFrontIcon
-            },
-            {
-                id: "5",
-                name: "Good electricity",
-                icon: CableIcon
-            },
-          
-            {
-                id: "6",
-                name: "Good water supply",
-                icon: ShowerHeadIcon
-            },
-            {
-                id: "7",
-                name: "Ultramodern washrooms",
-                icon: CctvIcon
-            },
-           
-        ],
+        name: "Security Gate Post",
+        icon: CctvIcon,
+      },
+      {
+        id: "2",
+        name: "Perimeter fence wall",
+        icon: FenceIcon,
+      },
+      {
+        id: "3",
+        name: "Fast and Reliable internet",
+        icon: WifiIcon,
+      },
+      {
+        id: "4",
+        name: "Asphalt Roads",
+        icon: BusFrontIcon,
+      },
+      {
+        id: "5",
+        name: "Good electricity",
+        icon: CableIcon,
+      },
 
-        href: "/Properties/rocky-mountains",
-        price: "$1,650,500"
-    }
-]
+      {
+        id: "6",
+        name: "Good water supply",
+        icon: ShowerHeadIcon,
+      },
+      {
+        id: "7",
+        name: "Ultramodern washrooms",
+        icon: CctvIcon,
+      },
+    ],
 
-
-
-
-
+    href: "/Properties/rocky-mountains",
+    price: "$1,650,500",
+  },
+];
 
 export const propertiesPageData: PropertiesPageItem[] = [
-    {
+  {
+    id: "1",
+    slug: "rocky-mountains",
+    heroTitle: "Rocky Mountains",
+    heroImages: [
+      "/PropertiesAssets/Img11.png",
+      "/PropertiesAssets/Img22.png",
+      "/PropertiesAssets/Img33.jpeg",
+      "/PropertiesAssets/Img44.jpeg",
+      "/PropertiesAssets/Img55.jpeg",
+      "/PropertiesAssets/Img66.jpeg",
+    ],
+    ctoHref: "/Contact",
+    SectionTag: "Properties",
+    priceRange: "$10,000 - $100,000",
+    description:
+      "Rocky Mountains is where life offers you the opportunity to blend nature seamlessly with the conveniences of modern living. It is a carefully planned 500-acre eco-friendly community located in the lush, serene enclave of Aburi, in the Eastern Region. This development offers fully serviced plots, designed to provide a sustainable and organic lifestyle, freeing you from the burdens of infrastructure development. Grace City Prime Land is more than just a residential area; it's a model community birthed from the high demand of our discerning clientele. Responding to countless requests, RKE has stepped in to create a space where essential infrastructure- including electricity, water, asphalt roads, sidewalks, a green park, efficient drainage, a secure gate post, parameter fence wall and ambient street lights – is already in place. This means you can focus on building your dream home and embracing a holistic way of life from day one, without the stress of coordinating these essential amenities yourself. Grace City Prime Land offers a unique opportunity to own fully serviced plots with convenient and affordable payment terms. The community is within reasonable proximity to major landmarks and amenities, and just a 40-minute drive from the airport, this is your chance to move into a community that takes away the burden of infrastructure worries. Embrace the ease of holistic and organic living at Grace City Prime Land, where your dream lifestyle becomes a reality.",
+    amenities: [
+      {
         id: "1",
-        slug: "rocky-mountains",
-        heroTitle: 	"Rocky Mountains",
-        heroImages: [
-            "/PropertiesAssets/Img11.jpeg",
-            "/PropertiesAssets/Img22.jpeg",
-            "/PropertiesAssets/Img33.jpeg",
-            "/PropertiesAssets/Img44.jpeg",
-            "/PropertiesAssets/Img55.jpeg",
-            "/PropertiesAssets/Img66.jpeg",
-        ],
-        ctoHref: "/Contact",
-        SectionTag: "Properties" ,  
-        priceRange: "$10,000 - $100,000",
-        description: "Rocky Mountains is where life offers you the opportunity to blend nature seamlessly with the conveniences of modern living. It is a carefully planned 500-acre eco-friendly community located in the lush, serene enclave of Aburi, in the Eastern Region. This development offers fully serviced plots, designed to provide a sustainable and organic lifestyle, freeing you from the burdens of infrastructure development. Grace City Prime Land is more than just a residential area; it's a model community birthed from the high demand of our discerning clientele. Responding to countless requests, RKE has stepped in to create a space where essential infrastructure- including electricity, water, asphalt roads, sidewalks, a green park, efficient drainage, a secure gate post, parameter fence wall and ambient street lights – is already in place. This means you can focus on building your dream home and embracing a holistic way of life from day one, without the stress of coordinating these essential amenities yourself. Grace City Prime Land offers a unique opportunity to own fully serviced plots with convenient and affordable payment terms. The community is within reasonable proximity to major landmarks and amenities, and just a 40-minute drive from the airport, this is your chance to move into a community that takes away the burden of infrastructure worries. Embrace the ease of holistic and organic living at Grace City Prime Land, where your dream lifestyle becomes a reality.",
-        amenities: [
-            {
-                id: "1",
-                name: "Security Gate Post",
-                icon: CctvIcon
-            },
-            {
-                id: "2",
-                name: "Perimeter fence wall",
-                icon: FenceIcon
-            },
-            {
-                id: "3",
-                name: "Fast and Reliable internet",
-                icon: WifiIcon
-            },
-            {
-                id: "4",
-                name: "Asphalt Roads",
-                icon: BusFrontIcon
-            },
-            {
-                id: "5",
-                name: "Good electricity",
-                icon: CableIcon
-            },
-          
-            {
-                id: "6",
-                name: "Good water supply",
-                icon: ShowerHeadIcon
-            },
-            {
-                id: "7",
-                name: "Ultramodern washrooms",
-                icon: CctvIcon
-            },
-            {
-                id: "8",
-                name: "Sidewalks",
-                icon: FootprintsIcon
-            },
-            {
-                id: "9",
-                name: "Swimming Pool",
-                icon: WavesIcon
-            },
-        ],
-
-        href: "/Properties/rocky-mountains",
-        price: "$1,650,500",
-        locationDetails: {
-            sectionTitle: "Location Details",
-            locationName: "East Legon-Accra",
-            mapEmbedUrl: "https://www.google.com/maps?q=East+Legon,Accra,Ghana&z=15&output=embed",
-            mapTitle: "Map - East Legon, Accra",
-            brochureButtonText: "Download Brochure",
-            brochureHref: "#",
-        }
-    },
-    {
+        name: "Security Gate Post",
+        icon: CctvIcon,
+      },
+      {
         id: "2",
-        slug: "rocky-mountains-estate",
-        title: "Rocky Mountains Estate",
-        heroTitle: "Rocky Mountains Estate",
-        location: "Palm Springs, CA",
-        description: "Rocky Mountains is where life offers you the opportunity to blend nature seamlessly with the conveniences of modern living. It is a carefully planned 500-acre eco-friendly community located in the lush, serene enclave of Aburi, in the Eastern Region. This development offers fully serviced plots, designed to provide a sustainable and organic lifestyle, freeing you from the burdens of infrastructure development. Grace City Prime Land is more than just a residential area; it's a model community birthed from the high demand of our discerning clientele. Responding to countless requests, RKE has stepped in to create a space where essential infrastructure- including electricity, water, asphalt roads, sidewalks, a green park, efficient drainage, a secure gate post, parameter fence wall and ambient street lights – is already in place. This means you can focus on building your dream home and embracing a holistic way of life from day one, without the stress of coordinating these essential amenities yourself. Grace City Prime Land offers a unique opportunity to own fully serviced plots with convenient and affordable payment terms. The community is within reasonable proximity to major landmarks and amenities, and just a 40-minute drive from the airport, this is your chance to move into a community that takes away the burden of infrastructure worries. Embrace the ease of holistic and organic living at Grace City Prime Land, where your dream lifestyle becomes a reality.",
-        imageSrc: "/HomeAssets/Img11.jpg",
-        heroImages: [
-            "/HomeAssets/Img10.jpg",
-            "/HomeAssets/Img11.jpg",
-            "/PropertiesAssets/Img1.jpg",
-            "/PropertiesAssets/Img2.jpg",
-            "/PropertiesAssets/Img3.jpg",
-            "/PropertiesAssets/Img4.jpg",
-        ],
-        amenities: [
-            { id: "1", name: "Gated community", icon: FenceIcon },
-            { id: "2", name: "24/7 security", icon: CctvIcon },
-            { id: "3", name: "Community swimming pool", icon: WavesIcon },
-            { id: "4", name: "Restaurant and bar", icon: UtensilsCrossed },
-            { id: "5", name: "Gym", icon: Dumbbell },
-            { id: "6", name: "Supermarket", icon: Store },
-            { id: "7", name: "Unisex saloon", icon: Scissors },
-            { id: "8", name: "Laundry services office", icon: ShowerHeadIcon },
-            { id: "9", name: "Children playground", icon: Baby },
-            { id: "10", name: "On-site facility management office", icon: Building2 },
-        ],
-        href: "/Properties/rocky-mountains-estate",
-        price: "$50,000 - $85,000",
-        priceTiers: [
-            { label: "2 bedroom semi-detached", price: "$50,000" },
-            { label: "2 bedroom detached", price: "$60,000" },
-            { label: "3 bedroom", price: "$75,000" },
-            { label: "4 bedroom", price: "$85,000" },
-        ],
-        paymentMode: "Pay 30% deposit and pay the rest in 3 years (monthly instalment)",
-        paymentDeposits: [
-            { label: "30% of $50,000", amount: "$15,000" },
-            { label: "30% of $60,000", amount: "$18,000" },
-            { label: "30% of $75,000", amount: "$22,500" },
-            { label: "30% of $85,000", amount: "$25,500" },
-        ],
-        additionalInfo: "All rooms ensuite. Wardrobes, kitchen cabinet, tiled compound, solar power supply available in case of power-outage. Reserved poly tank also available.",
-        locationDetails: {
-            sectionTitle: "Location Details",
-            locationName: "Palm Springs, CA",
-            mapEmbedUrl: "https://www.google.com/maps?q=Palm+Springs,CA,USA&z=15&output=embed",
-            mapTitle: "Map - Palm Springs, CA",
-            brochureButtonText: "Download Brochure",
-            brochureHref: "#",
-        }
-    },
-    {
+        name: "Perimeter fence wall",
+        icon: FenceIcon,
+      },
+      {
         id: "3",
-        slug: "rico-lands",
-        heroTitle: "Rico Lands",
-        ctoHref: "/Contact",
-        SectionTag: "Properties",
-        priceRange: "$45,000 - $85,000",
-        description: "Rocky Mountains is where life offers you the opportunity to blend nature seamlessly with the conveniences of modern living. It is a carefully planned 500-acre eco-friendly community located in the lush, serene enclave of Aburi, in the Eastern Region. This development offers fully serviced plots, designed to provide a sustainable and organic lifestyle, freeing you from the burdens of infrastructure development. Grace City Prime Land is more than just a residential area; it's a model community birthed from the high demand of our discerning clientele. Responding to countless requests, RKE has stepped in to create a space where essential infrastructure- including electricity, water, asphalt roads, sidewalks, a green park, efficient drainage, a secure gate post, parameter fence wall and ambient street lights – is already in place. This means you can focus on building your dream home and embracing a holistic way of life from day one, without the stress of coordinating these essential amenities yourself. Grace City Prime Land offers a unique opportunity to own fully serviced plots with convenient and affordable payment terms. The community is within reasonable proximity to major landmarks and amenities, and just a 40-minute drive from the airport, this is your chance to move into a community that takes away the burden of infrastructure worries. Embrace the ease of holistic and organic living at Grace City Prime Land, where your dream lifestyle becomes a reality.",
-        amenities: [
-            {
-                id: "1",
-                name: "Security Gate Post",
-                icon: CctvIcon
-            },
-            {
-                id: "2",
-                name: "Perimeter fence wall",
-                icon: FenceIcon
-            },
-            {
-                id: "3",
-                name: "Fast and Reliable internet",
-                icon: WifiIcon
-            },
-            {
-                id: "4",
-                name: "Asphalt Roads",
-                icon: BusFrontIcon
-            },
-            {
-                id: "5",
-                name: "Good electricity",
-                icon: CableIcon
-            },
-            {
-                id: "6",
-                name: "Good water supply",
-                icon: ShowerHeadIcon
-            },
-            {
-                id: "7",
-                name: "Ultramodern washrooms",
-                icon: CctvIcon
-            },
-            {
-                id: "8",
-                name: "Sidewalks",
-                icon: FootprintsIcon
-            },
-            {
-                id: "9",
-                name: "Swimming Pool",
-                icon: WavesIcon
-            },
-        ],
-        href: "/Properties/rico-lands",
-        price: "$78,000",
-        locationDetails: {
-            sectionTitle: "Location Details",
-            locationName: "Aburi, Eastern Region",
-            mapEmbedUrl: "https://www.google.com/maps?q=Aburi,Eastern+Region,Ghana&z=15&output=embed",
-            mapTitle: "Map - Aburi, Eastern Region",
-            brochureButtonText: "Download Brochure",
-            brochureHref: "#",
-        }
-    }
-]
+        name: "Fast and Reliable internet",
+        icon: WifiIcon,
+      },
+      {
+        id: "4",
+        name: "Asphalt Roads",
+        icon: BusFrontIcon,
+      },
+      {
+        id: "5",
+        name: "Good electricity",
+        icon: CableIcon,
+      },
 
+      {
+        id: "6",
+        name: "Good water supply",
+        icon: ShowerHeadIcon,
+      },
+      {
+        id: "7",
+        name: "Ultramodern washrooms",
+        icon: CctvIcon,
+      },
+      {
+        id: "8",
+        name: "Sidewalks",
+        icon: FootprintsIcon,
+      },
+      {
+        id: "9",
+        name: "Swimming Pool",
+        icon: WavesIcon,
+      },
+    ],
 
+    href: "/Properties/rocky-mountains",
+    price: "$1,650,500",
+    locationDetails: {
+      sectionTitle: "Location Details",
+      locationName: "East Legon-Accra",
+      mapEmbedUrl:
+        "https://www.google.com/maps?q=East+Legon,Accra,Ghana&z=15&output=embed",
+      mapTitle: "Map - East Legon, Accra",
+      brochureButtonText: "Download Brochure",
+      brochureHref: "#",
+    },
+  },
+  {
+    id: "2",
+    slug: "rocky-mountains-estate",
+    title: "Rocky Mountains Estate",
+    heroTitle: "Rocky Mountains Estate",
+    location: "Palm Springs, CA",
+    description:
+      "Rocky Mountains is where life offers you the opportunity to blend nature seamlessly with the conveniences of modern living. It is a carefully planned 500-acre eco-friendly community located in the lush, serene enclave of Aburi, in the Eastern Region. This development offers fully serviced plots, designed to provide a sustainable and organic lifestyle, freeing you from the burdens of infrastructure development. Grace City Prime Land is more than just a residential area; it's a model community birthed from the high demand of our discerning clientele. Responding to countless requests, RKE has stepped in to create a space where essential infrastructure- including electricity, water, asphalt roads, sidewalks, a green park, efficient drainage, a secure gate post, parameter fence wall and ambient street lights – is already in place. This means you can focus on building your dream home and embracing a holistic way of life from day one, without the stress of coordinating these essential amenities yourself. Grace City Prime Land offers a unique opportunity to own fully serviced plots with convenient and affordable payment terms. The community is within reasonable proximity to major landmarks and amenities, and just a 40-minute drive from the airport, this is your chance to move into a community that takes away the burden of infrastructure worries. Embrace the ease of holistic and organic living at Grace City Prime Land, where your dream lifestyle becomes a reality.",
+    imageSrc: "/HomeAssets/Img11.jpg",
+    heroImages: [
+      "/HomeAssets/Img10.jpg",
+      "/HomeAssets/Img11.jpg",
+      "/PropertiesAssets/Img1.jpg",
+      "/PropertiesAssets/Img2.jpg",
+      "/PropertiesAssets/Img3.jpg",
+      "/PropertiesAssets/Img4.jpg",
+    ],
+    amenities: [
+      { id: "1", name: "Gated community", icon: FenceIcon },
+      { id: "2", name: "24/7 security", icon: CctvIcon },
+      { id: "3", name: "Community swimming pool", icon: WavesIcon },
+      { id: "4", name: "Restaurant and bar", icon: UtensilsCrossed },
+      { id: "5", name: "Gym", icon: Dumbbell },
+      { id: "6", name: "Supermarket", icon: Store },
+      { id: "7", name: "Unisex saloon", icon: Scissors },
+      { id: "8", name: "Laundry services office", icon: ShowerHeadIcon },
+      { id: "9", name: "Children playground", icon: Baby },
+      { id: "10", name: "On-site facility management office", icon: Building2 },
+    ],
+    href: "/Properties/rocky-mountains-estate",
+    price: "$50,000 - $85,000",
+    priceTiers: [
+      { label: "2 bedroom semi-detached", price: "$50,000" },
+      { label: "2 bedroom detached", price: "$60,000" },
+      { label: "3 bedroom", price: "$75,000" },
+      { label: "4 bedroom", price: "$85,000" },
+    ],
+    paymentMode:
+      "Pay 30% deposit and pay the rest in 3 years (monthly instalment)",
+    paymentDeposits: [
+      { label: "30% of $50,000", amount: "$15,000" },
+      { label: "30% of $60,000", amount: "$18,000" },
+      { label: "30% of $75,000", amount: "$22,500" },
+      { label: "30% of $85,000", amount: "$25,500" },
+    ],
+    additionalInfo:
+      "All rooms ensuite. Wardrobes, kitchen cabinet, tiled compound, solar power supply available in case of power-outage. Reserved poly tank also available.",
+    locationDetails: {
+      sectionTitle: "Location Details",
+      locationName: "Palm Springs, CA",
+      mapEmbedUrl:
+        "https://www.google.com/maps?q=Palm+Springs,CA,USA&z=15&output=embed",
+      mapTitle: "Map - Palm Springs, CA",
+      brochureButtonText: "Download Brochure",
+      brochureHref: "#",
+    },
+  },
+  {
+    id: "3",
+    slug: "rico-lands",
+    heroTitle: "Rico Lands",
+    ctoHref: "/Contact",
+    SectionTag: "Properties",
+    priceRange: "$45,000 - $85,000",
+    description:
+      "Rocky Mountains is where life offers you the opportunity to blend nature seamlessly with the conveniences of modern living. It is a carefully planned 500-acre eco-friendly community located in the lush, serene enclave of Aburi, in the Eastern Region. This development offers fully serviced plots, designed to provide a sustainable and organic lifestyle, freeing you from the burdens of infrastructure development. Grace City Prime Land is more than just a residential area; it's a model community birthed from the high demand of our discerning clientele. Responding to countless requests, RKE has stepped in to create a space where essential infrastructure- including electricity, water, asphalt roads, sidewalks, a green park, efficient drainage, a secure gate post, parameter fence wall and ambient street lights – is already in place. This means you can focus on building your dream home and embracing a holistic way of life from day one, without the stress of coordinating these essential amenities yourself. Grace City Prime Land offers a unique opportunity to own fully serviced plots with convenient and affordable payment terms. The community is within reasonable proximity to major landmarks and amenities, and just a 40-minute drive from the airport, this is your chance to move into a community that takes away the burden of infrastructure worries. Embrace the ease of holistic and organic living at Grace City Prime Land, where your dream lifestyle becomes a reality.",
+    amenities: [
+      {
+        id: "1",
+        name: "Security Gate Post",
+        icon: CctvIcon,
+      },
+      {
+        id: "2",
+        name: "Perimeter fence wall",
+        icon: FenceIcon,
+      },
+      {
+        id: "3",
+        name: "Fast and Reliable internet",
+        icon: WifiIcon,
+      },
+      {
+        id: "4",
+        name: "Asphalt Roads",
+        icon: BusFrontIcon,
+      },
+      {
+        id: "5",
+        name: "Good electricity",
+        icon: CableIcon,
+      },
+      {
+        id: "6",
+        name: "Good water supply",
+        icon: ShowerHeadIcon,
+      },
+      {
+        id: "7",
+        name: "Ultramodern washrooms",
+        icon: CctvIcon,
+      },
+      {
+        id: "8",
+        name: "Sidewalks",
+        icon: FootprintsIcon,
+      },
+      {
+        id: "9",
+        name: "Swimming Pool",
+        icon: WavesIcon,
+      },
+    ],
+    href: "/Properties/rico-lands",
+    price: "$78,000",
+    locationDetails: {
+      sectionTitle: "Location Details",
+      locationName: "Aburi, Eastern Region",
+      mapEmbedUrl:
+        "https://www.google.com/maps?q=Aburi,Eastern+Region,Ghana&z=15&output=embed",
+      mapTitle: "Map - Aburi, Eastern Region",
+      brochureButtonText: "Download Brochure",
+      brochureHref: "#",
+    },
+  },
+];
 
-
-
-
-
-
+// Services Data
+export const servicesPageData: ServicesPageItem[] = [
+  {
+    id: "1",
+    slug: "land-acquisition",
+    heroTitle: "Land Acquisition",
+    SectionTag: "Services",
+    ctoHref: "/Contact",
+    heroImages: [
+      "/PropertiesAssets/Img1.jpg",
+      "/PropertiesAssets/Img2.jpg",
+      "/PropertiesAssets/Img3.jpg",
+      "/PropertiesAssets/Img4.jpg",
+      "/PropertiesAssets/Img5.jpg",
+      "/PropertiesAssets/Img6.jpg",
+    ],
+    description:
+      "At Nasqo Properties, land acquisition is not just a service — it is the cornerstone of what we do. We understand that owning land is more than a purchase; it is a foundation for building wealth, security, and a lifestyle that can last for generations. That is why we carefully source, verify, and secure every parcel we offer, ensuring all our lands are properly documented and fully litigation-free, giving you complete peace of mind and confidence in every transaction. Through our professional land acquisition process, we identify high-potential locations with strong growth prospects, strategic accessibility, and long-term value. Whether you are drawn to prime urban areas that offer convenience and fast development, or you prefer the calm, open beauty of the countryside, Nasqo Properties provides options that align perfectly with your vision and goals. Every plot we present is selected with appreciation potential in mind, making it an excellent opportunity for investors seeking sustainable, long-term returns. At the same time, for individuals and families ready to build a dream home, our lands offer the security and stability needed to plan the future with confidence. Beyond simply selling land, Nasqo Properties partners with you throughout the acquisition journey — from identification and verification to documentation and transfer — ensuring a smooth, transparent, and stress-free experience. With flexible options across diverse settings, our properties offer more than just space; they offer opportunity — the opportunity to grow your assets, secure your legacy, and create a future rooted in comfort, prosperity, and lasting value.",
+    additionalInfo:
+      "We handle complex land transactions across residential, commercial, industrial, and mixed-use developments. Our team maintains strong relationships with local authorities and works diligently to ensure all permits, approvals, and compliance requirements are met before and after acquisition.",
+  },
+  {
+    id: "2",
+    slug: "general-construction",
+    heroTitle: "General Construction",
+    SectionTag: "Services",
+    ctoHref: "/Contact",
+    heroImages: [
+      "/ServicesAssets/CS7.webp",
+      "/ServicesAssets/CS8.webp",
+      "/ServicesAssets/CS9.webp",
+      "/ServicesAssets/CS10.webp",
+      "/ServicesAssets/CS11.webp",
+      "/ServicesAssets/CS12.webp",
+    ],
+    description:
+      "At Nasqo Properties, our general construction services are built on a foundation of quality, precision, and innovation. We believe that construction is more than assembling materials — it is about transforming ideas into solid, lasting structures that serve generations. Every project we undertake is approached with strategic planning, technical expertise, and a commitment to delivering excellence from start to finish. From beautifully crafted residential homes and luxury apartments to large-scale commercial developments and institutional projects, our team of experienced architects, engineers, and skilled craftsmen work collaboratively to bring each vision to life. We pay close attention to every structural and aesthetic detail, ensuring that functionality, durability, and modern design blend seamlessly. We utilize premium-grade materials, advanced building technologies, and industry-best construction practices to guarantee strength, safety, and long-term value. Our process is transparent and client-focused — from initial consultation and design to project management and final delivery — ensuring timelines are met and expectations are exceeded. Beyond simply erecting buildings, Royal Kingdom Estate creates environments where families can feel secure, businesses can flourish, and communities can grow. With a reputation for reliability, integrity, and superior workmanship, we are committed to delivering construction solutions that not only meet today’s standards but set the benchmark for tomorrow.",
+    additionalInfo:
+      "Our construction projects include defect liability periods and responsive maintenance support. We provide as-built documentation, operation manuals, and handover training to ensure smooth transition and long-term asset performance.",
+  },
+  {
+    id: "3",
+    slug: "facility-management",
+    heroTitle: "Facility Management",
+    SectionTag: "Services",
+    ctoHref: "/Contact",
+    heroImages: [
+      "/ServicesAssets/FS1.webp",
+      "/ServicesAssets/FS2.webp",
+      "/ServicesAssets/FS3.webp",
+      "/ServicesAssets/FS4.webp",
+      "/ServicesAssets/FS5.webp",
+      "/ServicesAssets/FS6.webp",
+    ],
+    description:
+      "At Nasqo Properties, our facility management services are designed to protect, maintain, and enhance the value of your property long after construction or acquisition is complete. We understand that owning real estate is a significant investment, and proper management is essential to preserving its performance, safety, and long-term profitability. We take a proactive and preventive approach to facility management, ensuring that every property under our care operates efficiently and remains in excellent condition. From routine maintenance and technical inspections to security coordination, cleaning services, landscaping, and tenant relations, we provide comprehensive solutions tailored to the specific needs of each development. Our experienced and responsive team works diligently to identify and address potential issues before they escalate, minimizing downtime and preventing costly repairs. We prioritize professionalism, transparency, and accountability in every aspect of our operations, ensuring that property owners and tenants enjoy seamless, stress-free experiences. Whether managing residential estates, commercial buildings, or mixed-use developments, Nasqo Properties creates structured systems that promote smooth day-to-day operations and long-term sustainability. With us, your property is not just maintained — it is strategically managed and carefully cared for, ensuring consistent value, comfort, and reliability for years to come.",
+    additionalInfo:
+      "We offer 24/7 support for critical systems, emergency call-out services, and dedicated account managers. Our facility management platform provides real-time dashboards, work order tracking, and data-driven insights to optimize operational costs and improve building performance over time.",
+  },
+  {
+    id: "4",
+    slug: "project-management",
+    heroTitle: "Project Management",
+    SectionTag: "Services",
+    ctoHref: "/Contact",
+    heroImages: [
+      "/ServicesAssets/PS1.webp",
+      "/ServicesAssets/PS2.webp",
+      "/ServicesAssets/PS3.webp",
+      "/ServicesAssets/PS4.webp",
+      "/ServicesAssets/PS5.webp",
+      "/ServicesAssets/PS6.webp",
+    ],
+    description:
+      "At Nasqo Properties, successful projects don’t just happen — they are strategically designed, carefully coordinated, and executed with precision from inception to completion. Our project management service is structured to remove the complexity and stress from property development, giving you confidence at every stage of the journey. We oversee the entire project lifecycle, from feasibility studies and planning to design coordination, procurement, contractor supervision, and final handover. Every timeline, budget, resource, and stakeholder is meticulously managed to ensure smooth collaboration and efficient execution. By keeping your vision at the center of every decision, we align strategy with results — delivering outcomes that not only meet expectations but exceed them. Our experienced team blends technical expertise with strong organizational leadership, allowing us to anticipate challenges, mitigate risks, and implement practical solutions before issues arise. Through a structured and transparent approach, we maintain strict cost control, uphold quality standards, and ensure projects are delivered on schedule. With Nasqo Properties, you gain more than a project manager — you gain a dedicated partner committed to transforming ideas into reality with professionalism, accountability, and excellence at every step.",
+    additionalInfo:
+      "We provide transparent, real-time reporting to all stakeholders including owners, investors, and end users. Our project closeout includes documentation archiving, lessons learned sessions, and warranty handover to support long-term asset management.",
+  },
+  {
+    id: "5",
+    slug: "architecture-and-engineering",
+    heroTitle: "Architecture and Engineering",
+    SectionTag: "Services",
+    ctoHref: "/Contact",
+    heroImages: [
+      "/ServicesAssets/AS1.webp",
+      "/ServicesAssets/AS2.webp",
+      "/ServicesAssets/AS3.webp",
+      "/ServicesAssets/AS4.webp",
+      "/ServicesAssets/AS5.webp",
+    ],
+    description:
+      "At Nasqo Properties, our architecture and engineering services are driven by creativity, technical excellence, and forward-thinking innovation. We believe exceptional design is more than visual appeal — it is about creating functional, sustainable, and inspiring spaces that enhance lives and endure for generations. Our architects develop visionary concepts tailored to each client’s needs, blending modern aesthetics with purposeful design. At the same time, our engineers ensure that every concept is structurally sound, efficient, and built to meet the highest safety and regulatory standards. This seamless collaboration between creativity and technical precision allows us to transform ideas into practical, high-performing realities. From elegant residential homes and luxury developments to sophisticated commercial and mixed-use projects, we approach each assignment with meticulous attention to detail and a commitment to world-class standards. By integrating advanced technologies, smart design solutions, and environmentally responsible practices, we deliver structures that are energy-efficient, durable, and cost-effective over the long term. With Nasqo Properties, your project is not simply constructed — it is intelligently designed and expertly engineered to reflect excellence, innovation, and lasting value at every stage.",
+    additionalInfo:
+      "We integrate sustainability, energy efficiency, and resilient design into all our work. We use modern standards including green building certifications where applicable, and select materials and systems that create buildings built for the future.",
+  },
+  {
+    id: "6",
+    slug: "interior-design",
+    heroTitle: "Interior Design",
+    SectionTag: "Services",
+    ctoHref: "/Contact",
+    heroImages: [
+      "/ServicesAssets/IS1.webp",
+      "/ServicesAssets/IS2.webp",
+      "/ServicesAssets/IS3.webp",
+      "/ServicesAssets/IS4.webp",
+      "/ServicesAssets/IS5.webp",
+      "/ServicesAssets/IS6.webp",
+    ],
+    description:
+      "At Nasqo Properties, our interior design services are dedicated to transforming spaces into refined, functional, and inspiring environments that truly reflect your personality and lifestyle. We believe interior design is far more than selecting colors or arranging furniture — it is about creating harmonious spaces that balance beauty, comfort, and purpose. From initial concept development to the final finishing touches, our design team works closely with clients to understand their vision, preferences, and practical needs. Every detail is carefully considered — including lighting, materials, textures, spatial flow, and ergonomics — to ensure each space feels cohesive, welcoming, and highly functional. We specialize in residential, commercial, and hospitality interiors, delivering bespoke solutions that maximize space, enhance natural light, and elevate the overall experience of the environment. Whether designing a warm and elegant home, a sophisticated office setting, or a vibrant hospitality space, we blend creativity with practicality to achieve outstanding results. By combining modern trends with timeless design principles, Nasqo Properties creates interiors that are visually striking, comfortable, and built to stand the test of time. With us, your space is not simply decorated — it is thoughtfully curated to enhance well-being, productivity, and everyday living while reflecting excellence at every level.",
+    additionalInfo:
+      "We work with a curated network of trusted vendors and artisans to source quality materials, furniture, and furnishings. We provide detailed specifications, procurement support, and on-site supervision to ensure the final result matches the design intent.",
+  },
+];
 
 // Testimonial Data
 
 export const testimonialData = [
-    {
-        id: "1",
-        description: "After months of searching across different websites, I finally found my ideal home in no time using this platform. The listings were detailed, and the photos accurately reflected each property. Everything was clearly presented, which made comparing options easy and stress-free. Scheduling viewings and making inquiries felt smooth and straightforward. Customer service was top-notch, answering all my questions promptly and professionally. I will definitely use this platform again in the future and highly recommend it to others!",
-        name: "John Doe",
-        title: "Property Owner",
-        icon: "/Main_Assets/Tag_outline_main.svg",
-        imageSrc: "/HomeAssets/Img18.jpg"
-    },
-    {
-        id: "2",
-        description: "I discovered the perfect property much faster than I expected! The platform provided clear descriptions, high-quality images, and all the essential details I needed to make a confident decision. The entire experience was smooth and hassle-free, and the support team was incredibly responsive whenever I needed assistance. I would absolutely recommend this service to anyone searching for their next home and will gladly return in the future.",
-        name: "Caleb Mensah",
-        title: "MD, Rome Estate",
-        icon: "/Main_Assets/Tag_outline_main.svg",
-        imageSrc: "/HomeAssets/Img6.jpg"
-    },
-    {
-        id: "3",
-        description: "I had an amazing experience using this platform to find my new home! The property listings were informative and well-organized, making it easy to compare options and narrow down my choices. The photos truly reflected what was available, and the entire process felt straightforward and stress-free. Whenever I had questions, the customer support team responded promptly and professionally. I wouldn’t hesitate to use this service again and highly recommend it to anyone looking for a reliable real estate solution.",
-        name: "Caleb Mensah",
-        title: "MD, Rome Estate",
-        icon: "/Main_Assets/Tag_outline_main.svg",
-        imageSrc: "/HomeAssets/Img11.jpg"
-    },
-]
+  {
+    id: "1",
+    description:
+      "After months of searching across different websites, I finally found my ideal home in no time using this platform. The listings were detailed, and the photos accurately reflected each property. Everything was clearly presented, which made comparing options easy and stress-free. Scheduling viewings and making inquiries felt smooth and straightforward. Customer service was top-notch, answering all my questions promptly and professionally. I will definitely use this platform again in the future and highly recommend it to others!",
+    name: "John Doe",
+    title: "Property Owner",
+    icon: "/Main_Assets/Tag_outline_main.svg",
+    imageSrc: "/HomeAssets/Img18.jpg",
+  },
+  {
+    id: "2",
+    description:
+      "I discovered the perfect property much faster than I expected! The platform provided clear descriptions, high-quality images, and all the essential details I needed to make a confident decision. The entire experience was smooth and hassle-free, and the support team was incredibly responsive whenever I needed assistance. I would absolutely recommend this service to anyone searching for their next home and will gladly return in the future.",
+    name: "Caleb Mensah",
+    title: "MD, Rome Estate",
+    icon: "/Main_Assets/Tag_outline_main.svg",
+    imageSrc: "/HomeAssets/Img6.jpg",
+  },
+  {
+    id: "3",
+    description:
+      "I had an amazing experience using this platform to find my new home! The property listings were informative and well-organized, making it easy to compare options and narrow down my choices. The photos truly reflected what was available, and the entire process felt straightforward and stress-free. Whenever I had questions, the customer support team responded promptly and professionally. I wouldn’t hesitate to use this service again and highly recommend it to anyone looking for a reliable real estate solution.",
+    name: "Caleb Mensah",
+    title: "MD, Rome Estate",
+    icon: "/Main_Assets/Tag_outline_main.svg",
+    imageSrc: "/HomeAssets/Img11.jpg",
+  },
+];
 
 // FAQ Data
 export const faqData = [
@@ -440,50 +553,52 @@ export const faqData = [
     answer:
       "We offer flexible pricing: fixed-price for well-defined scopes, time-and-materials for evolving projects, and retainer arrangements for ongoing work. We'll recommend the best model based on your project needs.",
   },
-]
-
-
+];
 
 // Core Values Data - About Page
 
 export const coreValuesDataAboutPage = [
-    {
-        id: "1",
-        title: "Long lasting service",
-        subtext: "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind.Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
-        icon: FunnelPlus
-    },
-    {
-        id: "2",
-        title: "Client-Focused Service",
-        subtext: "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind.Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
-        icon: Users
-    },
-    {
-        id: "3",
-        title: "Safe Haven Living",
-        subtext: "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind.Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
-        icon: ShieldCheck
-    },
-    {
-        id: "4",
-        title: "Transparent Transactions",
-        subtext: "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind.Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
-        icon: BadgeCent
-    },
+  {
+    id: "1",
+    title: "Long lasting service",
+    subtext:
+      "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind.Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
+    icon: FunnelPlus,
+  },
+  {
+    id: "2",
+    title: "Client-Focused Service",
+    subtext:
+      "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind.Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
+    icon: Users,
+  },
+  {
+    id: "3",
+    title: "Safe Haven Living",
+    subtext:
+      "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind.Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
+    icon: ShieldCheck,
+  },
+  {
+    id: "4",
+    title: "Transparent Transactions",
+    subtext:
+      "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind.Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
+    icon: BadgeCent,
+  },
 
-    {
-        id: "5",
-        title: "Transparent Transactions",
-        subtext: "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind.Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
-        icon: BadgeCent
-    },
-    {
-        id: "6",
-        title: "Transparent Transactions",
-        subtext: "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind.Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
-        icon: BadgeCent
-    },
-]
-
-
+  {
+    id: "5",
+    title: "Transparent Transactions",
+    subtext:
+      "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind.Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
+    icon: BadgeCent,
+  },
+  {
+    id: "6",
+    title: "Transparent Transactions",
+    subtext:
+      "We ensure every deal is transparent, secure, and reliable, giving clients peace of mind.Our commitment to honesty and integrity sets the foundation for lasting client relationships.",
+    icon: BadgeCent,
+  },
+];
