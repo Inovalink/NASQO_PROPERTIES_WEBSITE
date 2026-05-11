@@ -102,6 +102,7 @@ function page() {
             </div>
           </div>
         </div>
+        
 
         {/* -------------------VISION AND MISSION SECTION------------------- */}
 
@@ -148,6 +149,8 @@ function page() {
               </div>
             </div>
           </div>
+
+
 
           {/* -------------------MISSION SECTION------------------- */}
           <div className="flex flex-col xl:flex-row-reverse w-full min-h-screen xl:min-h-0 xl:py-[3%] xl:gap-10 xl:items-stretch 2xl:py-[4%] 2xl:gap-14 2xl:items-center">
